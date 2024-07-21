@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "34Q0qoMB1vQ=",
+  "dgSpecHash": "/fAF5Vs/fyQ=",
   "success": true,
   "projectFilePath": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\EState.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ertugrul\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
+    "C:\\Users\\Ertugrul\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
     "C:\\Users\\Ertugrul\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ertugrul\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Ertugrul\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

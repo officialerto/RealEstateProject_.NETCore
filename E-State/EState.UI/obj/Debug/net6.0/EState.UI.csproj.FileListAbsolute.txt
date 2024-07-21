@@ -78,3 +78,4 @@ D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\DataAcce
 D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\EntityLayer.pdb
 D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\Humanizer.dll
 D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\FluentValidation.dll

@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "FluentValidation/10.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authentication/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -1260,6 +1273,27 @@
     }
   },
   "libraries": {
+    "FluentValidation/10.4.0": {
+      "sha512": "rVI1b5L3pq3layrRKIo3N7AT3PWey8ocPZhf6zeHYf6LBBvnP1KzW3bm7KmeazOWW8m1KXMD+shfviIcKSgQ0g==",
+      "type": "package",
+      "path": "fluentvalidation/10.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.10.4.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
     "Microsoft.AspNetCore.Authentication/2.2.0": {
       "sha512": "b0R9X7L6zMqNsssKDvhYHuNi5x0s4DyHTeXybIAyGaitKiW1Q5aAGKdV2codHPiePv9yHfC9hAMyScXQ/xXhPw==",
       "type": "package",
@@ -2907,7 +2941,8 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "DataAccessLayer >= 1.0.0",
-      "EntityLayer >= 1.0.0"
+      "EntityLayer >= 1.0.0",
+      "FluentValidation >= 10.4.0"
     ]
   },
   "packageFolders": {
@@ -2961,6 +2996,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[10.4.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

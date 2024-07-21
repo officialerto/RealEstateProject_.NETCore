@@ -9,10 +9,19 @@
       "BusinessLayer/1.0.0": {
         "dependencies": {
           "DataAccessLayer": "1.0.0",
-          "EntityLayer": "1.0.0"
+          "EntityLayer": "1.0.0",
+          "FluentValidation": "10.4.0"
         },
         "runtime": {
           "BusinessLayer.dll": {}
+        }
+      },
+      "FluentValidation/10.4.0": {
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "10.4.0.0"
+          }
         }
       },
       "Microsoft.AspNetCore.Authentication/2.2.0": {
@@ -827,6 +836,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "FluentValidation/10.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rVI1b5L3pq3layrRKIo3N7AT3PWey8ocPZhf6zeHYf6LBBvnP1KzW3bm7KmeazOWW8m1KXMD+shfviIcKSgQ0g==",
+      "path": "fluentvalidation/10.4.0",
+      "hashPath": "fluentvalidation.10.4.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication/2.2.0": {
       "type": "package",

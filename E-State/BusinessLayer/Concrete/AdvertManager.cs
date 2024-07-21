@@ -19,6 +19,8 @@ namespace BusinessLayer.Concrete
             _advertRepository = advertRepository;
         }
 
+
+
         public void Add(Advert p)
         {
             _advertRepository.Add(p);

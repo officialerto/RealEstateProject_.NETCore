@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "y8/gMdQW8RM=",
+  "dgSpecHash": "datn3xBJ5AA=",
   "success": true,
   "projectFilePath": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ertugrul\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
     "C:\\Users\\Ertugrul\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Ertugrul\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Ertugrul\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
