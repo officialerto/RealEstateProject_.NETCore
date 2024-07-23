@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EState.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9a78efd47e4435ad1e88b95016a0ea8b925aee3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10fe7bda6a017d19cb47a96fbfe29b5115ebbd7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("EState.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EState.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
