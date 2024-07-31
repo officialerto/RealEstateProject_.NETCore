@@ -1,4 +1,5 @@
 using DataAccessLayer.Data;
+using EState.UI.Areas.Admin.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,11 @@ builder.Services.AddDbContext<DataContext>(conf => conf.UseSqlServer(builder.Con
 
 
 var app = builder.Build();
+
+
+app.PrepareDatabase().GetAwaiter().GetResult();
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
