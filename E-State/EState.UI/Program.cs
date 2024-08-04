@@ -1,5 +1,7 @@
 using DataAccessLayer.Data;
+using EntityLayer.Entities;
 using EState.UI.Areas.Admin.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,22 @@ builder.Services.AddControllersWithViews();
 
 
 builder.Services.AddDbContext<DataContext>(conf => conf.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")).UseLazyLoadingProxies());
+
+builder.Services.AddIdentity<UserAdmin, IdentityRole>().AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
+
+builder.Services.Configure<IdentityOptions>(opt =>
+{
+    opt.SignIn.RequireConfirmedPhoneNumber = false;
+    opt.SignIn.RequireConfirmedEmail = false;
+    opt.SignIn.RequireConfirmedAccount = false;
+
+    opt.Password.RequireDigit = false;
+    opt.Password.RequiredLength = 8;
+    opt.Password.RequireLowercase = false;
+    opt.Password.RequireUppercase = false;
+    opt.Password.RequireNonAlphanumeric = false;
+    opt.User.AllowedUserNameCharacters = "abcçdefgðhýijklmnoöprsþtuüvyzABCÇDEFGÐHIÝJKLMNOÖPRSÞTUÜVYZ0123456789-._";
+});
 
 
 var app = builder.Build();
