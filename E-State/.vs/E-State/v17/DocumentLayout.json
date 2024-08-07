@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|solutionrelative:estate.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|d:\\github\\realestateproject_.netcore\\e-state\\estate.ui\\areas\\admin\\identity\\seedidentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|solutionrelative:estate.ui\\areas\\admin\\identity\\seedidentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|d:\\github\\realestateproject_.netcore\\e-state\\estate.ui\\areas\\admin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|solutionrelative:estate.ui\\areas\\admin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,22 +28,22 @@
               "RelativeDocumentMoniker": "EState.UI\\Program.cs",
               "ToolTip": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Program.cs",
               "RelativeToolTip": "EState.UI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAmAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACAAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T14:02:58.524Z",
+              "WhenOpened": "2024-08-07T13:50:18.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SeedIdentity.cs",
-              "DocumentMoniker": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Areas\\Admin\\Identity\\SeedIdentity.cs",
-              "RelativeDocumentMoniker": "EState.UI\\Areas\\Admin\\Identity\\SeedIdentity.cs",
-              "ToolTip": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Areas\\Admin\\Identity\\SeedIdentity.cs",
-              "RelativeToolTip": "EState.UI\\Areas\\Admin\\Identity\\SeedIdentity.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAA5wCAAAAAiAAAA",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "EState.UI\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "EState.UI\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA3wDIAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T13:16:52.231Z",
+              "WhenOpened": "2024-08-07T13:27:49.02Z",
               "EditorCaption": ""
             }
           ]

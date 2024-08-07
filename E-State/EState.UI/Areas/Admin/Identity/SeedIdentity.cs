@@ -30,7 +30,7 @@ namespace EState.UI.Areas.Admin.Identity
 
             if (await userManager.FindByNameAsync("Admin Admin") == null)
             {
-                var IdentityResult = await userManager.CreateAsync(user);
+                var IdentityResult = await userManager.CreateAsync(user, "admin123456");
             }
 
             if (await roleManager.FindByNameAsync("Admin") == null)

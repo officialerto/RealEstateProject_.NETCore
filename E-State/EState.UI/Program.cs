@@ -28,6 +28,13 @@ builder.Services.Configure<IdentityOptions>(opt =>
     opt.User.AllowedUserNameCharacters = "abcçdefgðhýijklmnoöprsþtuüvyzABCÇDEFGÐHIÝJKLMNOÖPRSÞTUÜVYZ0123456789-._";
 });
 
+builder.Services.ConfigureApplicationCookie( opt =>
+{
+    opt.LoginPath = "/Admin/Admin/Login/";
+    ...................
+})
+
+builder.Services.AddSession();
 
 var app = builder.Build();
 
@@ -46,10 +53,10 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
+app.UseSession();
 
 app.UseEndpoints(endpoints =>
 {
