@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class DistrictManager : GenericService<District>
+    public class DistrictManager : DistrictService
     {
         IDistrictRepository _districtRepository;
 

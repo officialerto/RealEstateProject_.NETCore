@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    internal class NeighborhoodManager : GenericService<Neighborhood>
+    public class NeighborhoodManager : NeighborhoodService
     {
         INeighborhoodRepository _neigh;
 

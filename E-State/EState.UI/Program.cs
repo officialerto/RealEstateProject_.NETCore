@@ -1,3 +1,7 @@
+using BusinessLayer.Abstract;
+using BusinessLayer.Concrete;
+using DataAccessLayer.Abstract;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.Data;
 using EntityLayer.Entities;
 using EState.UI.Areas.Admin.Identity;
@@ -28,11 +32,31 @@ builder.Services.Configure<IdentityOptions>(opt =>
     opt.User.AllowedUserNameCharacters = "abcçdefgðhýijklmnoöprsþtuüvyzABCÇDEFGÐHIÝJKLMNOÖPRSÞTUÜVYZ0123456789-._";
 });
 
-builder.Services.ConfigureApplicationCookie( opt =>
+builder.Services.ConfigureApplicationCookie(opt =>
 {
     opt.LoginPath = "/Admin/Admin/Login/";
-    ...................
-})
+    opt.LogoutPath = "/Admin/Admin/LogOut";
+    opt.AccessDeniedPath = "/Admin/Admin/AccessDeniedPath";
+    opt.ExpireTimeSpan = TimeSpan.FromMinutes(6);
+});
+
+builder.Services.AddScoped<AdvertService, AdvertManager>();
+builder.Services.AddScoped<CityService, CityManager>();
+builder.Services.AddScoped<DistrictService, DistrictManager>();
+builder.Services.AddScoped<GeneralSettingsService, GeneralSettingsManager>();
+builder.Services.AddScoped<ImagesService, ImagesManager>();
+builder.Services.AddScoped<NeighborhoodService, NeighborhoodManager>();
+builder.Services.AddScoped<SituationService, SituationManager>();
+builder.Services.AddScoped<TypeService, TypeManager>();
+
+builder.Services.AddScoped<IAdvertRepository, EfAdvertRepository>();
+builder.Services.AddScoped<ICityRepository, EfCityRepository>();
+builder.Services.AddScoped<IGeneralSettingsRepository, EfGeneralSettingsRepository>();
+builder.Services.AddScoped<IImagesRepository, EfImagesRepository>();
+builder.Services.AddScoped<INeighborhoodRepository, EfNeighborhoodRepository>();
+builder.Services.AddScoped<IDistrictRepository, EfDistrictRepository>();
+builder.Services.AddScoped<ISituationRepository, EfSituationRepository>();
+builder.Services.AddScoped<ITypeRepository, EfTypeRepository>();
 
 builder.Services.AddSession();
 

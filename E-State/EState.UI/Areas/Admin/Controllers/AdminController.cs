@@ -1,11 +1,13 @@
 ﻿using EntityLayer.Entities;
 using EState.UI.Areas.Admin.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EState.UI.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
         private UserManager<UserAdmin> _userManager;
@@ -22,6 +24,7 @@ namespace EState.UI.Areas.Admin.Controllers
             return View();
         }
 
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View(new LoginModel());
@@ -29,9 +32,10 @@ namespace EState.UI.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AllowAnonymous]
         public async Task<IActionResult> Login(LoginModel model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return View(model);
             }
@@ -53,7 +57,14 @@ namespace EState.UI.Areas.Admin.Controllers
             }
 
             return View();
+        }
 
+        public async Task<IActionResult> LogOut()
+        {
+            await _signInManager.SignOutAsync();
+            HttpContext.Session.Remove("FullName");
+
+            return RedirectToAction("Login");
         }
     }
 }

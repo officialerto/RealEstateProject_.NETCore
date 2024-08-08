@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class TypeManager : GenericService<EntityLayer.Entities.Type>
+    public class TypeManager : TypeService
     {
         ITypeRepository _type;
 

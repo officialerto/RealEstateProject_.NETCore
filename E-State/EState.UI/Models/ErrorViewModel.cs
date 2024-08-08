@@ -1,4 +1,4 @@
-namespace EState.UI.Models
+﻿namespace EState.UI.Models
 {
     public class ErrorViewModel
     {

@@ -3,5 +3,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="container">
+    <div class="row"> 
+        <div class="col-md-6">
+            <div class="jumbotron">
+                @Context.Session.GetString("FullName") Welcome Admin!
+            </div>
+        </>
+    </div>
+</div>
 

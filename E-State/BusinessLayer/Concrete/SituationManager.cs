@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class SituationManager : GenericService<Situation>
+    public class SituationManager : SituationService
     {
         ISituationRepository _status;
 
