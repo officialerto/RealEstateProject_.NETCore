@@ -1,0 +1,62 @@
+﻿@model List<Advert>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@if (Model.Count == 0)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="alert alert-success">
+                    No ads yet
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+else
+{
+    <table class="table table-bordered table table-striped">
+        <tr>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Room Number</th>
+            <th>Bath Number</th>
+            <th>Areas</th>
+            <th>Floor</th>
+            <th>Address</th>
+            <th>Ad Pictures</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </tr>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Description</td>
+                    <td>@item.Price</td>
+                    <td>@item.NumberOfRooms</td>
+                    <td>@item.BathroomNumbers</td>
+                    <td>@item.Area</td>
+                    <td>@item.Floor</td>
+                    <td>@item.Address</td>
+                    <td>
+                        <a class="btn btn-success" asp-action="AdvertImages" asp-route-id="@item.Id"></a>
+                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id"></a>
+                        <a class="btn btn-primary" asp-action="Update" asp-route-id="@item.Id"></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a class="btn btn-primary" asp-action="Create">
+        Add
+    </a>
+
+}
+
