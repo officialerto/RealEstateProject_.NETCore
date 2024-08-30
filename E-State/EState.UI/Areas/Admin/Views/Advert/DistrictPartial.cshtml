@@ -1,0 +1,14 @@
+﻿
+<option value="">
+    Semt Seç
+</option>
+
+@if (ViewBag.district! = null)
+{
+    @foreach (var item in ViewBag.district)
+    {
+        <option value="@item.Value">
+            @item.Text
+        </option>
+    }
+}

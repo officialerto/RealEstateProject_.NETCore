@@ -62,6 +62,16 @@ namespace EState.UI.Areas.Admin.Controllers
             return PartialView("DistrictPartial");
         }
 
+        public PartialViewResult DistrictPartial()
+        {
+            return PartialView();
+        }
+
+        public PartialViewResult TypePartial()
+        {
+            return PartialView();
+        }
+
         public IActionResult TypeGet(int id)
         {
             List<EntityLayer.Entities.Type> typelist = typeService.List(x => x.Status == true && x.SituationId == id);
