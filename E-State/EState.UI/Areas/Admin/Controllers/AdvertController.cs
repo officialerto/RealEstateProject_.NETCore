@@ -1,5 +1,8 @@
 ﻿using BusinessLayer.Abstract;
+using BusinessLayer.ValidationRules;
 using EntityLayer.Entities;
+using FluentValidation;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -17,7 +20,9 @@ namespace EState.UI.Areas.Admin.Controllers
         SituationService situationService;
         TypeService typeService;
 
-        public AdvertController(AdvertService advertService, CityService cityService, DistrictService districtService, NeighborhoodService neighborhoodService, SituationService situationService, TypeService typeService)
+        IWebHostEnvironment hostEnvironment;
+
+        public AdvertController(AdvertService advertService, CityService cityService, DistrictService districtService, NeighborhoodService neighborhoodService, SituationService situationService, TypeService typeService, IWebHostEnvironment hostEnvironment)
         {
             this.advertService = advertService;
             this.cityService = cityService;
@@ -25,6 +30,8 @@ namespace EState.UI.Areas.Admin.Controllers
             this.neighborhoodService = neighborhoodService;
             this.situationService = situationService;
             this.typeService = typeService;
+
+            this.hostEnvironment = hostEnvironment;
         }
 
         public IActionResult Index()
@@ -38,6 +45,57 @@ namespace EState.UI.Areas.Admin.Controllers
 
         public IActionResult Create()
         {
+            ViewBag.userid = HttpContext.Session.GetString("Id");
+            DropDown();
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Advert data)
+        {
+            AdvertValidation validationRules = new AdvertValidation();
+            ValidationResult result = validationRules.Validate(data);
+
+            if (result.IsValid)
+            {
+                if (data.Image != null)
+                {
+                    var dosyayolu = Path.Combine(hostEnvironment.WebRootPath, "img");
+
+                    foreach (var item in data.Image)
+                    {
+                        var tamDosyaAdi = Path.Combine(dosyayolu, item.FileName);
+
+                        using (var dosyaAkisi = new FileStream(tamDosyaAdi, FileMode.Create))
+                        {
+                            item.CopyTo(dosyaAkisi);
+                        }
+
+                        data.Images.Add(new Images
+                        {
+                            ImageName = item.FileName,
+                            Status = true,
+                        });
+                    }
+
+                    advertService.Add(data);
+
+                    TempData["Success"] = "İlan ekleme başarıyla gerçekleşti";
+                    return RedirectToAction("Index");
+
+                }
+            }
+
+            else
+            {
+                foreach (var item in result.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+
+            DropDown();
             return View();
         }
 
@@ -53,9 +111,9 @@ namespace EState.UI.Areas.Admin.Controllers
             return situation;
         }
 
-        public IActionResult DistrictGet(int id) 
+        public IActionResult DistrictGet(int CityId) 
         {
-            List<District> districtlist = districtService.List(x=>x.Status == true && x.CityId == id);
+            List<District> districtlist = districtService.List(x=>x.Status == true && x.CityId == CityId);
 
             ViewBag.district = new SelectList(districtlist, "DistrictId", "DistrictName");
 
@@ -71,21 +129,25 @@ namespace EState.UI.Areas.Admin.Controllers
         {
             return PartialView();
         }
-
-        public IActionResult TypeGet(int id)
+        public PartialViewResult NeighborhoodPartial()
         {
-            List<EntityLayer.Entities.Type> typelist = typeService.List(x => x.Status == true && x.SituationId == id);
+            return PartialView();
+        }
+
+        public IActionResult TypeGet(int SituationId)
+        {
+            List<EntityLayer.Entities.Type> typelist = typeService.List(x => x.Status == true && x.SituationId == SituationId);
 
             ViewBag.type = new SelectList(typelist, "TypeId", "TypeName");
 
             return PartialView("TypePartial");
         }
 
-        public IActionResult NeighborhoodGet(int id)
+        public IActionResult NeighborhoodGet(int DistrictId)
         {
-            List<Neighborhood> neighlist = neighborhoodService.List(x => x.Status == true && x.DistrictId == id);
+            List<Neighborhood> neighlist = neighborhoodService.List(x => x.Status == true && x.DistrictId == DistrictId);
 
-            ViewBag.district = new SelectList(neighlist, "NeighborhoodId", "NeighborhoodName");
+            ViewBag.neigh = new SelectList(neighlist, "NeighborhoodId", "NeighborhoodName");
 
             return PartialView("NeighborhoodPartial");
         }
@@ -94,6 +156,38 @@ namespace EState.UI.Areas.Admin.Controllers
         public void DropDown()
         {
             ViewBag.citylist = new SelectList(CityGet(), "CityId", "CityName");
+            ViewBag.situations = new SelectList(SituationGet(), "SituationId", "SituationName");
+
+            List<SelectListItem> value1 = (from i in districtService.List(X => X.Status == true)
+                                           select new SelectListItem
+                                           {
+                                               Text = i.DistrictName,
+                                               Value = i.DistrictId.ToString()
+                                           }).ToList();
+            ViewBag.district = value1;
+
+            List<SelectListItem> value2 = (from i in neighborhoodService.List(x => x.Status == true)
+                                           select new SelectListItem
+                                           {
+                                               Text = i.NeighborhoodName,
+                                               Value = i.NeighborhoodId.ToString()
+                                           }).ToList();
+            ViewBag.neighbourhood = value2;
+            List<SelectListItem> value3 = (from i in typeService.List(x => x.Status == true)
+                                           select new SelectListItem
+                                           {
+                                               Text = i.TypeName,
+                                               Value = i.TypeId.ToString()
+                                           }).ToList();
+            ViewBag.type = value3;
+
+            List<SelectListItem> value4 = (from i in situationService.List(x => x.Status == true)
+                                           select new SelectListItem
+                                           {
+                                               Text = i.SituationName,
+                                               Value = i.SituationId.ToString()
+                                           }).ToList();
+            ViewBag.situation = value4;
         }
 
     }

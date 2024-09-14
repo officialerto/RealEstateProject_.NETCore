@@ -15,6 +15,11 @@ namespace BusinessLayer.Concrete
     {
         ICityRepository _cityRepository;
 
+        public CityManager(ICityRepository cityRepository)
+        {
+            _cityRepository = cityRepository;
+        }
+
         public void Add(City p)
         {
             _cityRepository.Add(p);

@@ -1,0 +1,11 @@
+﻿﻿
+<option value="">Mahalle Seç</option>
+
+@if (ViewBag.neigh != null)
+{
+    @foreach (var item in ViewBag.neigh)
+    {
+        <option value="@item.Value">@item.Text</option>
+    }
+
+}

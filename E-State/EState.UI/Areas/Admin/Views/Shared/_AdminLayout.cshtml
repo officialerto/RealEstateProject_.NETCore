@@ -22,13 +22,40 @@
     <link href="~/Admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
     <!-- Custom styles for this template-->
     <link href="~/Admin/css/sb-admin-2.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <script src="~/Admin/vendor/jquery/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 
 </head>
 
 <body id="page-top">
+
+    @if (TempData["Success"] != null)
+    {
+        <script type="text/javascript">
+            toastr.success('@TempData["Success"]', 'Başarılı');
+        </script>
+    }
+
+    @if (TempData["Update"] != null)
+    {
+        <script type="text/javascript">
+            toastr.warning('@TempData["Update"]', 'Başarılı');
+        </script>
+    }
+
+    @if (TempData["RestoreDelete"] != null)
+    {
+        <script type="text/javascript">
+            toastr.info('@TempData["RestoreDelete"]', 'Başarılı');
+        </script>
+    }
+
 
     <!-- Page Wrapper -->
     <div id="wrapper">

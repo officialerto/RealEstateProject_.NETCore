@@ -82,9 +82,6 @@ namespace DataAccessLayer.Migrations
                     b.Property<int>("NeighborhoodId")
                         .HasColumnType("int");
 
-                    b.Property<int>("NeighbourhoodId")
-                        .HasColumnType("int");
-
                     b.Property<int>("NumberOfRooms")
                         .HasColumnType("int");
 

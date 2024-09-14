@@ -23,6 +23,9 @@ namespace BusinessLayer.Concrete
 
         public void Add(Advert p)
         {
+            p.Status = true;
+            p.AdvertDate = DateTime.Now;
+
             _advertRepository.Add(p);
         }
 

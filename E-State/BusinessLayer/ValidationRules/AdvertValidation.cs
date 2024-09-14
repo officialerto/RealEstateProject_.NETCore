@@ -16,7 +16,7 @@ namespace BusinessLayer.ValidationRules
         {
             RuleFor(x => x.Address).NotEmpty().WithMessage("Adres bilgisi boş bırakılamaz!");
             RuleFor(x => x.AdvertTitle).NotEmpty().WithMessage("İlan başlığı boş bırakılamaz!");
-            RuleFor(x => x.AdvertTitle).MinimumLength(300).MaximumLength(500).WithMessage("Minimum 300, maximum 500 karakter giriniz!");
+            RuleFor(x => x.AdvertTitle).MinimumLength(5).MaximumLength(700).WithMessage("Minimum 5, maximum 700 karakter giriniz!");
             RuleFor(x => x.Area).NotEmpty().WithMessage("Bu alan boş bırakılamaz!");
             RuleFor(x => x.BathroomNumbers).NotEmpty().WithMessage("Banyo sayısı boş bırakılamaz!");
             RuleFor(x => x.NumberOfRooms).NotEmpty().WithMessage("Oda sayısı boş bırakılamaz!");
@@ -25,12 +25,12 @@ namespace BusinessLayer.ValidationRules
             RuleFor(x => x.Garage).NotEmpty().WithMessage("Garaj alanı boş bırakılamaz!");
             RuleFor(x => x.Price).NotEmpty().WithMessage("Fiyat alanı boş bırakılamaz!");
             RuleFor(x => x.PhoneNumber).NotEmpty().WithMessage("Telefon numarası boş bırakılamaz!");
-            RuleFor(x => x.NeighbourhoodId).NotEmpty().WithMessage("Mahalle alanı boş bırakılamaz!");
+            //RuleFor(x => x.NeighbourhoodId).NotEmpty().WithMessage("Mahalle alanı boş bırakılamaz!");
             RuleFor(x => x.DistrictId).NotEmpty().WithMessage("Semt alanı boş bırakılamaz!");
             RuleFor(x => x.TypeId).NotEmpty().WithMessage("Tip alanı boş bırakılamaz!");
             RuleFor(x => x.CityId).NotEmpty().WithMessage("Şehir alanı boş bırakılamaz!");
             RuleFor(x => x.SituationId).NotEmpty().WithMessage("Durum alanı boş bırakılamaz!");
-            RuleFor(x => x.PhoneNumber).Matches(new Regex(@"([\+]90?)([ ]?)(\([0-9]{3}\))([ ]?)([0-9]{3})(\s*[\-]?)([0-9]{2})(\s*[\-]?)([0-9]{2})"));
+            //RuleFor(x => x.PhoneNumber).Matches(new Regex(@"([\+]90?)([ ]?)(\([0-9]{3}\))([ ]?)([0-9]{3})(\s*[\-]?)([0-9]{2})(\s*[\-]?)([0-9]{2})"));
         }
 
         //private bool IsPhoneNumber(string arg)

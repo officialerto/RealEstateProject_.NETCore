@@ -28,11 +28,13 @@ namespace DataAccessLayer.Concrete
         public void Add(T p)
         {
             _object.Add(p);
+            context.SaveChanges();
         }
 
         public void Delete(T p)
         {
             _object.Remove(p);
+            context.SaveChanges();
         }
 
         public T GetById(int id)
@@ -53,6 +55,7 @@ namespace DataAccessLayer.Concrete
         public void Update(T p)
         {
             _object.Update(p);
+            context.SaveChanges();
         }
     }
 }

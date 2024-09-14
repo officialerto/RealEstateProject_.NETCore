@@ -38,7 +38,7 @@ namespace EntityLayer.Entities
         public string Address { get; set; }
         public int CityId { get; set; }
         public int DistrictId { get; set; }
-        public int NeighbourhoodId { get; set; }
+        public int NeighborhoodId { get; set; }
         public int SituationId { get; set; }
         public int TypeId { get; set; }
         public string UserAdminId { get; set; }
