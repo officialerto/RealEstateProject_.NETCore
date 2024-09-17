@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DataAccessLayer.Migrations
 {
-    public partial class initialize : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -288,12 +288,11 @@ namespace DataAccessLayer.Migrations
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CityId = table.Column<int>(type: "int", nullable: false),
                     DistrictId = table.Column<int>(type: "int", nullable: false),
-                    NeighbourhoodId = table.Column<int>(type: "int", nullable: false),
+                    NeighborhoodId = table.Column<int>(type: "int", nullable: false),
                     SituationId = table.Column<int>(type: "int", nullable: false),
                     TypeId = table.Column<int>(type: "int", nullable: false),
                     UserAdminId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Status = table.Column<bool>(type: "bit", nullable: false),
-                    NeighborhoodId = table.Column<int>(type: "int", nullable: false)
+                    Status = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {

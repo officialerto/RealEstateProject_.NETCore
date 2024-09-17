@@ -25,11 +25,12 @@ namespace BusinessLayer.ValidationRules
             RuleFor(x => x.Garage).NotEmpty().WithMessage("Garaj alanı boş bırakılamaz!");
             RuleFor(x => x.Price).NotEmpty().WithMessage("Fiyat alanı boş bırakılamaz!");
             RuleFor(x => x.PhoneNumber).NotEmpty().WithMessage("Telefon numarası boş bırakılamaz!");
-            //RuleFor(x => x.NeighbourhoodId).NotEmpty().WithMessage("Mahalle alanı boş bırakılamaz!");
+
             RuleFor(x => x.DistrictId).NotEmpty().WithMessage("Semt alanı boş bırakılamaz!");
             RuleFor(x => x.TypeId).NotEmpty().WithMessage("Tip alanı boş bırakılamaz!");
             RuleFor(x => x.CityId).NotEmpty().WithMessage("Şehir alanı boş bırakılamaz!");
             RuleFor(x => x.SituationId).NotEmpty().WithMessage("Durum alanı boş bırakılamaz!");
+            RuleFor(x => x.NeighborhoodId).NotEmpty().WithMessage("Mahalle alanı boş bırakılamaz!");
             //RuleFor(x => x.PhoneNumber).Matches(new Regex(@"([\+]90?)([ ]?)(\([0-9]{3}\))([ ]?)([0-9]{3})(\s*[\-]?)([0-9]{2})(\s*[\-]?)([0-9]{2})"));
         }
 

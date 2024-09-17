@@ -44,19 +44,52 @@ else
                     <td>@item.Area</td>
                     <td>@item.Floor</td>
                     <td>@item.Address</td>
-                    <td>
-                        <a class="btn btn-success" asp-action="AdvertImages" asp-route-id="@item.Id"></a>
-                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id"></a>
-                        <a class="btn btn-primary" asp-action="Update" asp-route-id="@item.Id"></a>
-                    </td>
+                    <td><a class="btn btn-success" asp-action="AdvertImages" asp-route-id="@item.Id">İlan Resimleri</a></td>
+@*                     <td><a class="btn btn-danger" asp-route-id="@item.Id" id="delete">Sil</a></td> *@
+                    <td><a class="btn btn-danger" data-id="@item.Id" id="delete">Sil</a></td>
+                    <td><a class="btn btn-primary" asp-action="Update" asp-route-id="@item.Id">Güncelle</a></td>
                 </tr>
             }
         </tbody>
     </table>
-
-    <a class="btn btn-primary" asp-action="Create">
-        Add
-    </a>
-
 }
+
+<br />
+<a class="btn btn-primary" asp-action="Create">
+    Ekle
+</a>
+
+
+<script type="text/javascript">
+    $("#table").on("click", "#delete", function () {
+
+        var id = $(this).data("id");
+
+        swal({
+            title: "Silmek istiyor musunuz?",
+            text: "İlan silinecek gerçekten silmek istediğinize emin misiniz!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    $.ajax({
+                        type: "GET",
+                        url: '/Admin/Advert/FullDelete/' + id,
+
+                        success: function () {
+                            toastr.error("İlan Silme İşlemi başarıyla gerçekleşti")
+
+                        }
+                    });
+
+                    $(this).parent("td").parent("tr").remove();
+                }
+            });
+
+    });
+
+</script>
+
 

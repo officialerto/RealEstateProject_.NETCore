@@ -18,5 +18,12 @@ namespace DataAccessLayer.Concrete
             this.context = context;
         }
 
+        public void FullDelete(Advert p)
+        {
+            var advert = context.Adverts.Find(p.Id);
+
+            context.Adverts.Remove(advert);
+            context.SaveChanges();
+        }
     }
 }

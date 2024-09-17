@@ -14,6 +14,9 @@ namespace EntityLayer.Entities
         public string NeighborhoodName { get; set; }
         public bool Status { get; set; }
         public int DistrictId { get; set; }
+        //public int Id { get; set; }
+
+        //public virtual Advert Advert { get; set; }
 
         public virtual District District { get; set; }
     }

@@ -5,6 +5,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|d:\\github\\realestateproject_.netcore\\e-state\\estate.ui\\areas\\admin\\controllers\\advertcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|solutionrelative:estate.ui\\areas\\admin\\controllers\\advertcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|d:\\github\\realestateproject_.netcore\\e-state\\estate.ui\\areas\\admin\\views\\advert\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|solutionrelative:estate.ui\\areas\\admin\\views\\advert\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73ECF2A0-4B10-4711-BEED-056F35F4AC3E}|BusinessLayer\\BusinessLayer.csproj|d:\\github\\realestateproject_.netcore\\e-state\\businesslayer\\concrete\\advertmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73ECF2A0-4B10-4711-BEED-056F35F4AC3E}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\concrete\\advertmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C53CFAC-922F-4710-809F-C4C8B68FE85A}|DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\realestateproject_.netcore\\e-state\\dataaccesslayer\\abstract\\iadvertrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C53CFAC-922F-4710-809F-C4C8B68FE85A}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\abstract\\iadvertrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C53CFAC-922F-4710-809F-C4C8B68FE85A}|DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\realestateproject_.netcore\\e-state\\dataaccesslayer\\concrete\\efadvertrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C53CFAC-922F-4710-809F-C4C8B68FE85A}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\concrete\\efadvertrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73ECF2A0-4B10-4711-BEED-056F35F4AC3E}|BusinessLayer\\BusinessLayer.csproj|d:\\github\\realestateproject_.netcore\\e-state\\businesslayer\\abstract\\advertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73ECF2A0-4B10-4711-BEED-056F35F4AC3E}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\abstract\\advertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Areas\\Admin\\Views\\Advert\\Index.cshtml",
+              "RelativeDocumentMoniker": "EState.UI\\Areas\\Admin\\Views\\Advert\\Index.cshtml",
+              "ToolTip": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Areas\\Admin\\Views\\Advert\\Index.cshtml",
+              "RelativeToolTip": "EState.UI\\Areas\\Admin\\Views\\Advert\\Index.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAE4AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T20:39:38.994Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,9 +57,61 @@
               "RelativeDocumentMoniker": "EState.UI\\Areas\\Admin\\Controllers\\AdvertController.cs",
               "ToolTip": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Areas\\Admin\\Controllers\\AdvertController.cs",
               "RelativeToolTip": "EState.UI\\Areas\\Admin\\Controllers\\AdvertController.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAtwEAAAAAAAAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAAAqwEEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T13:18:01.419Z",
+              "WhenOpened": "2024-09-17T20:38:38.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdvertManager.cs",
+              "DocumentMoniker": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\BusinessLayer\\Concrete\\AdvertManager.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Concrete\\AdvertManager.cs",
+              "ToolTip": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\BusinessLayer\\Concrete\\AdvertManager.cs",
+              "RelativeToolTip": "BusinessLayer\\Concrete\\AdvertManager.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwCkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T20:35:45.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdvertService.cs",
+              "DocumentMoniker": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\BusinessLayer\\Abstract\\AdvertService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Abstract\\AdvertService.cs",
+              "ToolTip": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\BusinessLayer\\Abstract\\AdvertService.cs",
+              "RelativeToolTip": "BusinessLayer\\Abstract\\AdvertService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T20:35:11.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EfAdvertRepository.cs",
+              "DocumentMoniker": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\DataAccessLayer\\Concrete\\EfAdvertRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Concrete\\EfAdvertRepository.cs",
+              "ToolTip": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\DataAccessLayer\\Concrete\\EfAdvertRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Concrete\\EfAdvertRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T20:32:32.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAdvertRepository.cs",
+              "DocumentMoniker": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\DataAccessLayer\\Abstract\\IAdvertRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Abstract\\IAdvertRepository.cs",
+              "ToolTip": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\DataAccessLayer\\Abstract\\IAdvertRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Abstract\\IAdvertRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T20:31:36.086Z",
               "EditorCaption": ""
             }
           ]

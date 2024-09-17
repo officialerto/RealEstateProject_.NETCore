@@ -138,7 +138,7 @@
                                 <option value="0" selected>Seçiniz</option>
 
 
-                                <option value="NeighbourhoodId"></option> 
+                                <option value="NeighborhoodId"></option> 
 
 
 
@@ -245,13 +245,13 @@
 
             $.ajax({
                 type:"Post",
-                url:"/Admin/Advert/NeighbourhoodGet?DistrictId="+districtId,
+                url:"/Admin/Advert/NeighborhoodGet?DistrictId="+districtId,
                 contentType:"html",
 
                 success:function(response){
                    
-                    $("#NeighbourhoodId").empty();
-                    $("#NeighbourhoodId").append(response);
+                    $("#NeighborhoodId").empty();
+                    $("#NeighborhoodId").append(response);
                 }
             });
 

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240714200756_initialize")]
-    partial class initialize
+    [Migration("20240915114952_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -82,9 +82,6 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("bit");
 
                     b.Property<int>("NeighborhoodId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("NeighbourhoodId")
                         .HasColumnType("int");
 
                     b.Property<int>("NumberOfRooms")

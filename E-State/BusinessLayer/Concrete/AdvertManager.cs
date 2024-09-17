@@ -31,7 +31,15 @@ namespace BusinessLayer.Concrete
 
         public void Delete(Advert p)
         {
-            _advertRepository.Delete(p);
+            var delete = _advertRepository.GetById(p.Id);
+            p.Status = false;
+            _advertRepository.Update(delete);
+        }
+
+        public void FullDelete(Advert p)
+        {
+            var delete = _advertRepository.GetById(p.Id);
+            _advertRepository.FullDelete(delete);
         }
 
         public Advert GetById(int id)
@@ -47,6 +55,13 @@ namespace BusinessLayer.Concrete
         public List<Advert> List(Expression<Func<Advert, bool>> filter)
         {
             return _advertRepository.List(filter);
+        }
+
+        public void RestoreDelete(Advert p)
+        {
+            var delete = _advertRepository.GetById(p.Id);
+            p.Status = true;
+            _advertRepository.Update(delete);
         }
 
         public void Update(Advert p)

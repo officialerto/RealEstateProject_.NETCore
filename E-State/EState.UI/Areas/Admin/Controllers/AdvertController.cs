@@ -43,6 +43,47 @@ namespace EState.UI.Areas.Admin.Controllers
             return View(list);
         }
 
+        public IActionResult DeleteList()
+        {
+            string id = HttpContext.Session.GetString("Id");
+
+            var list = advertService.List(x => x.Status == false && x.UserAdminId == id);
+
+            return View(list);
+        }
+
+        public IActionResult RestoreDeleted(int id)
+        {
+            var sessionuser = HttpContext.Session.GetString("Id");
+
+            var delete = advertService.GetById(id);
+
+            if (sessionuser.ToString() == delete.UserAdminId)
+            {
+                advertService.RestoreDelete(delete);
+                TempData["RestoreDelete"] = "İlan geri ekleme başarıyla gerçekleşti";
+                return RedirectToAction("Index");
+            }
+
+            return View();
+        }
+
+        public IActionResult FullDelete(int id)
+        {
+            var sessionuser = HttpContext.Session.GetString("Id");
+
+            var delete = advertService.GetById(id);
+
+            if (sessionuser.ToString() == delete.UserAdminId)
+            {
+                advertService.FullDelete(delete);
+                //TempData["RestoreDelete"] = "İlan geri ekleme başarıyla gerçekleşti";
+                return RedirectToAction("Index");
+            }
+
+            return View();
+        }
+
         public IActionResult Create()
         {
             ViewBag.userid = HttpContext.Session.GetString("Id");
@@ -96,6 +137,21 @@ namespace EState.UI.Areas.Admin.Controllers
             }
 
             DropDown();
+            return View();
+        }
+
+        public IActionResult Delete(int id)
+        {
+            var sessionuser = HttpContext.Session.GetString("Id");
+
+            var delete = advertService.GetById(id);
+
+            if (sessionuser.ToString() == delete.UserAdminId)
+            {
+                advertService.Delete(delete);
+                return RedirectToAction("Index");
+            }
+
             return View();
         }
 
