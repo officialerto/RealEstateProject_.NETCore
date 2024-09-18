@@ -140,6 +140,41 @@ namespace EState.UI.Areas.Admin.Controllers
             return View();
         }
 
+        public IActionResult Update(int id)
+        {
+            ViewBag.userid = HttpContext.Session.GetString("Id");
+            DropDown();
+
+            var advert = advertService.GetById(id);
+
+            return View(advert);
+        }
+
+        public IActionResult Update(Advert data)
+        {
+            AdvertValidation validationRules = new AdvertValidation();
+            ValidationResult result = validationRules.Validate(data);
+
+            if (result.IsValid)
+            {
+                advertService.Update(data);
+
+                TempData["Update"] = "İlan güncelleme başarıyla gerçekleşti";
+                return RedirectToAction("Index");
+            }
+
+            else
+            {
+                foreach (var item in result.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+
+            DropDown();
+            return View(data);
+        }
+
         public IActionResult Delete(int id)
         {
             var sessionuser = HttpContext.Session.GetString("Id");
@@ -157,7 +192,7 @@ namespace EState.UI.Areas.Admin.Controllers
 
         public List<City> CityGet()
         {
-            List<City> cities = cityService.List(x=>x.Status == true);
+            List<City> cities = cityService.List(x => x.Status == true);
             return cities;
         }
 
@@ -167,9 +202,9 @@ namespace EState.UI.Areas.Admin.Controllers
             return situation;
         }
 
-        public IActionResult DistrictGet(int CityId) 
+        public IActionResult DistrictGet(int CityId)
         {
-            List<District> districtlist = districtService.List(x=>x.Status == true && x.CityId == CityId);
+            List<District> districtlist = districtService.List(x => x.Status == true && x.CityId == CityId);
 
             ViewBag.district = new SelectList(districtlist, "DistrictId", "DistrictName");
 

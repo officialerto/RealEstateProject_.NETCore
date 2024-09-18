@@ -66,6 +66,26 @@ namespace BusinessLayer.Concrete
 
         public void Update(Advert p)
         {
+            var advert = _advertRepository.GetById(p.Id);
+            advert.Address = p.Address;
+            advert.Description = p.Description;
+            advert.BathroomNumbers = p.BathroomNumbers;
+            advert.NumberOfRooms = p.NumberOfRooms;
+            advert.Floor = p.Floor;
+            advert.AirConditioner = p.AirConditioner;
+            advert.Garage = p.Garage;
+            advert.Garden = p.Garden;
+            advert.Furniture = p.Furniture;
+            advert.FirePlace = p.FirePlace;
+            advert.Area = p.Area;
+            advert.Pool = p.Pool;
+            advert.Teras = p.Teras;
+            advert.DistrictId = p.DistrictId;
+            advert.CityId = p.CityId;
+            advert.NeighborhoodId = p.NeighborhoodId;
+            advert.PhoneNumber = p.PhoneNumber;
+            advert.AdvertDate = DateTime.Now;
+
             _advertRepository.Update(p);
         }
     }

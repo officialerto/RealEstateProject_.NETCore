@@ -1,0 +1,182 @@
+﻿@model Advert
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="form-group">
+                        <form method="post" enctype="multipart/form-data" asp-antiforgery="true">
+
+                            @* @Html.AntiForgeryToken() *@
+                            @* .NET CORE'da asp-antiforgery="true" *@
+
+                            <div asp-validation-summary="ModelOnly"></div>
+
+                            <input type="hidden" value="@ViewBag.userid" asp-for="UserAdminId" />
+                            <label>Açıklama</label>
+                            <textarea cols="4" rows="4" asp-for="Description" class="form-control"></textarea>
+                            <span asp-validation-for="Description" class="text text-danger"></span>
+
+                            <br />
+
+                            <label>Başlık</label>
+                            <input type="text" asp-for="AdvertTitle" class="form-control" />
+                            <span asp-validation-for="AdvertTitle" class="text text-danger"></span>
+                            <br />
+
+                            <label>Fiyat</label>
+                            <input type="text" asp-for="Price" class="form-control" />
+                            <span asp-validation-for="Price" class="text text-danger"></span>
+                            <br />
+
+                            <label>Oda Sayısı</label>
+                            <input type="text" asp-for="NumberOfRooms" class="form-control" />
+                            <span asp-validation-for="NumberOfRooms" class="text text-danger"></span>
+                            <br />
+
+                            <label>Banyo Sayısı</label>
+                            <input type="text" asp-for="BathroomNumbers" class="form-control" />
+                            <span asp-validation-for="BathroomNumbers" class="text text-danger"></span>
+                            <br />
+
+
+
+                            <label>Kredi Uygun mu?</label>
+                            <input type="checkbox" asp-for="Credit" />
+                            <span asp-validation-for="Credit" class="text text-danger"></span>
+                            <br />
+
+                            <label>Garaj</label>
+                            <input type="text" asp-for="Garage" class="form-control" />
+                            <span asp-validation-for="Garage" class="text text-danger"></span>
+                            <br />
+
+                            <label>Şömine</label>
+                            <input type="checkbox" asp-for="FirePlace" />
+                            <span asp-validation-for="FirePlace" class="text text-danger"></span>
+                            <br />
+
+                            <label>Bahçe</label>
+                            <input type="checkbox" asp-for="Garden" />
+                            <span asp-validation-for="Garden" class="text text-danger"></span>
+                            <br />
+
+                            <label>Eşyalı mı?</label>
+                            <input type="checkbox" asp-for="Furniture" />
+                            <span asp-validation-for="Furniture" class="text text-danger"></span>
+                            <br />
+
+                            <label>Havuz </label>
+                            <input type="checkbox" asp-for="Pool" />
+                            <span asp-validation-for="Pool" class="text text-danger"></span>
+                            <br />
+
+                            <label>Teras </label>
+                            <input type="checkbox" asp-for="Teras" />
+                            <span asp-validation-for="Teras" class="text text-danger"></span>
+                            <br />
+
+                            <label>Klima</label>
+                            <input type="checkbox" asp-for="AirConditioner" />
+                            <span asp-validation-for="AirConditioner" class="text text-danger"></span>
+                            <br />
+
+                            <label>Alan</label>
+                            <input type="text" asp-for="Area" class="form-control" />
+                            <span asp-validation-for="Area" class="text text-danger"></span>
+                            <br />
+
+                            <label>Kat Sayısı</label>
+                            <input type="text" asp-for="Floor" class="form-control" />
+                            <span asp-validation-for="Floor" class="text text-danger"></span>
+                            <br />
+
+                            <label>Telefon</label>
+                            <input type="text" name="PhoneNumber" class="form-control" />
+                            <span asp-validation-for="PhoneNumber" class="text text-danger"></span>
+                            <br />
+
+
+
+                            <label>Adres</label>
+                            <textarea rows="4" cols="4" class="form-control" asp-for="Address"> </textarea>
+                            <span asp-validation-for="Address" class="text text-danger"></span>
+                            <br />
+
+
+
+                            <label>Şehir</label>
+                            <select asp-for="CityId" id="CityId" class="form-control">
+                                <option value="0" selected>Seçiniz</option>
+
+                                @foreach (var item in ViewBag.citylist)
+                                {
+                                    <option value="@item.Value">@item.Text</option>
+                                }
+
+                            </select>
+                            <br />
+
+                            <label>Semt</label>
+
+                            <select id="DistrictId" asp-for="DistrictId" class="form-control">
+                                <option value="0" selected>Seçiniz</option>
+
+                                <option value="DistrictId"></option>
+
+
+                            </select>
+                            <br />
+
+                            <label>Mahalle</label>
+                            <select id="NeighborhoodId" asp-for="NeighborhoodId" class="form-control">
+                                <option value="0" selected>Seçiniz</option>
+
+
+                                <option value="NeighborhoodId"></option>
+
+
+
+                            </select>
+                            <br />
+                            <label>Durum</label>
+                            <select id="SituationId" asp-for="SituationId" class="form-control">
+                                <option value="0" selected>Seçiniz</option>
+                                @foreach (var item in ViewBag.situations)
+                                {
+                                    <option value="@item.Value">@item.Text</option>
+                                }
+
+                            </select>
+                            <br />
+                            <label>Tip</label>
+                            <select id="TypeId" asp-for="TypeId" class="form-control">
+                                <option value="0" selected>Seçiniz</option>
+
+                                <option value="TypeId"></option>
+
+
+                            </select>
+                            <br />
+
+
+
+                            <label>Resimler</label>
+                            <input type="file" multiple asp-for="Image" />
+                            <span asp-validation-for="Image" class="text text-danger"></span>
+                            <br />
+
+                            <button type="submit" class="btn btn-primary">Ekle</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
