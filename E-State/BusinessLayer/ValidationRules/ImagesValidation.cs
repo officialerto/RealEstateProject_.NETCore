@@ -12,8 +12,8 @@ namespace BusinessLayer.ValidationRules
     {
         public ImagesValidation()
         {
-            RuleFor(x=>x.ImageName).NotEmpty().WithMessage("Boş bırakılamaz!");
-            RuleFor(x=>x.AdvertId).NotEmpty().WithMessage("İlan bilgisi boş bırakılamaz!");
+            RuleFor(x=>x.Image).NotEmpty().WithMessage("Boş bırakılamaz!");
+            //RuleFor(x=>x.AdvertId).NotEmpty().WithMessage("İlan bilgisi boş bırakılamaz!");
         }
     }
 }

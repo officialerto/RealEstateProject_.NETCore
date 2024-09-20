@@ -1,0 +1,37 @@
+﻿@model EntityLayer.Entities.Type
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <form method="post" asp-antiforgery="true">
+
+                        <label>Tip Adı</label>
+                        <input type="text" asp-for="TypeName" class="form-control" />
+                        <span asp-validation-for="TypeName" class="text-danger"></span>
+                        <br />
+                        <label>Durum</label>
+                        <select asp-for="SituationId" class="form-control">
+                            <option value="0" selected>Seçiniz</option>
+
+                            @foreach (var item in ViewBag.status)
+                            {
+                                <option value="@item.Value">@item.Text</option>
+                            }
+
+                        </select>
+                        <br />
+                        <button type="submit" class="btn btn-primary">Ekle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

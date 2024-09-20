@@ -17,6 +17,8 @@
 
                             <div asp-validation-summary="ModelOnly"></div>
 
+                            <input type="hidden" asp-for="Id" />
+
                             <input type="hidden" value="@ViewBag.userid" asp-for="UserAdminId" />
                             <label>Açıklama</label>
                             <textarea cols="4" rows="4" asp-for="Description" class="form-control"></textarea>
@@ -97,7 +99,7 @@
                             <br />
 
                             <label>Telefon</label>
-                            <input type="text" name="PhoneNumber" class="form-control" />
+                            <input type="text" name="PhoneNumber" asp-for="PhoneNumber" class="form-control" />
                             <span asp-validation-for="PhoneNumber" class="text text-danger"></span>
                             <br />
 
@@ -124,54 +126,45 @@
 
                             <label>Semt</label>
 
-                            <select id="DistrictId" asp-for="DistrictId" class="form-control">
+                            <select asp-for="DistrictId" class="form-control">
                                 <option value="0" selected>Seçiniz</option>
-
-                                <option value="DistrictId"></option>
-
-
-                            </select>
-                            <br />
-
-                            <label>Mahalle</label>
-                            <select id="NeighborhoodId" asp-for="NeighborhoodId" class="form-control">
-                                <option value="0" selected>Seçiniz</option>
-
-
-                                <option value="NeighborhoodId"></option>
-
-
-
-                            </select>
-                            <br />
-                            <label>Durum</label>
-                            <select id="SituationId" asp-for="SituationId" class="form-control">
-                                <option value="0" selected>Seçiniz</option>
-                                @foreach (var item in ViewBag.situations)
+                                @foreach (var item in ViewBag.district)
                                 {
                                     <option value="@item.Value">@item.Text</option>
                                 }
 
                             </select>
                             <br />
-                            <label>Tip</label>
-                            <select id="TypeId" asp-for="TypeId" class="form-control">
+
+                            <select asp-for="NeighborhoodId" class="form-control">
                                 <option value="0" selected>Seçiniz</option>
+                                @foreach (var item in ViewBag.neighbourhood)
+                                {
+                                    <option value="@item.Value">@item.Text</option>
+                                }
 
-                                <option value="TypeId"></option>
-
+                            </select>
+                            <br />
+                            <select asp-for="TypeId" class="form-control">
+                                <option value="0" selected>Seçiniz</option>
+                                @foreach (var item in ViewBag.type)
+                                {
+                                    <option value="@item.Value">@item.Text</option>
+                                }
 
                             </select>
                             <br />
 
+                            <select asp-for="SituationId" class="form-control">
+                                <option value="0" selected>Seçiniz</option>
+                                @foreach (var item in ViewBag.situation)
+                                {
+                                    <option value="@item.Value">@item.Text</option>
+                                }
 
+                            </select>
 
-                            <label>Resimler</label>
-                            <input type="file" multiple asp-for="Image" />
-                            <span asp-validation-for="Image" class="text text-danger"></span>
-                            <br />
-
-                            <button type="submit" class="btn btn-primary">Ekle</button>
+                            <button type="submit" class="btn btn-primary">Güncelle</button>
                         </form>
 
                     </div>

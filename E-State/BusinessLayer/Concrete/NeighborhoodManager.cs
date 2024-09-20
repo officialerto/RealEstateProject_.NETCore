@@ -21,12 +21,17 @@ namespace BusinessLayer.Concrete
 
         public void Add(Neighborhood p)
         {
+            p.Status = true;
+
             _neigh.Add(p);
         }
 
         public void Delete(Neighborhood p)
         {
-            _neigh.Delete(p);
+            var neigh = _neigh.GetById(p.NeighborhoodId);
+            neigh.Status = false;
+
+            _neigh.Update(neigh);
         }
 
         public Neighborhood GetById(int id)
@@ -46,7 +51,11 @@ namespace BusinessLayer.Concrete
 
         public void Update(Neighborhood p)
         {
-            _neigh.Update(p);
+            var neigh = _neigh.GetById(p.NeighborhoodId);
+            neigh.NeighborhoodName = p.NeighborhoodName;
+            neigh.DistrictId = p.DistrictId;
+
+            _neigh.Update(neigh);
         }
     }
 }

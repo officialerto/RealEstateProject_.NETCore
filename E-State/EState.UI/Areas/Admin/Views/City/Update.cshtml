@@ -1,0 +1,26 @@
+﻿@model City
+@{
+    ViewData["Title"] = "Update";
+}
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <form method="post" asp-antiforgery="true">
+
+                        <input type="hidden" asp-for="CityId" />
+
+                        <label>Şehir Adı</label>
+                        <input type="text" asp-for="CityName" class="form-control" />
+                        <span asp-validation-for="CityName" class="text-danger"></span>
+                        <br />
+                        <button type="submit" class="btn btn-primary">Güncelle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

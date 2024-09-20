@@ -46,7 +46,10 @@ namespace BusinessLayer.Concrete
 
         public void Update(Images p)
         {
-            _imagesRepository.Update(p);
+            var update = _imagesRepository.GetById(p.ImageId);
+            update.ImageName = p.Image.FileName;
+
+            _imagesRepository.Update(update);
         }
     }
 }

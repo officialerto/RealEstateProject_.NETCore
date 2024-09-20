@@ -86,7 +86,7 @@ namespace BusinessLayer.Concrete
             advert.PhoneNumber = p.PhoneNumber;
             advert.AdvertDate = DateTime.Now;
 
-            _advertRepository.Update(p);
+            _advertRepository.Update(advert);
         }
     }
 }

@@ -7525,6 +7525,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\img\\20221023_175337.jpg",
+      "PackagePath": "staticwebassets\\img\\20221023_175337.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\img\\Jpg.jpg",
+      "PackagePath": "staticwebassets\\img\\Jpg.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\img\\WeiLDIjr_400x400.jpg",
+      "PackagePath": "staticwebassets\\img\\WeiLDIjr_400x400.jpg"
+    },
+    {
       "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\img\\psd.jpg",
       "PackagePath": "staticwebassets\\img\\psd.jpg"
     },

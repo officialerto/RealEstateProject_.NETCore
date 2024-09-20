@@ -13,7 +13,7 @@ namespace BusinessLayer.ValidationRules
         public CityValidation()
         {
             RuleFor(x=>x.CityName).NotEmpty().WithMessage("Bu alan boş bırakılamaz!");
-            RuleFor(x=>x.CityName).MinimumLength(15).MaximumLength(20);
+            RuleFor(x=>x.CityName).MinimumLength(3).MaximumLength(20);
         }
     }
 }

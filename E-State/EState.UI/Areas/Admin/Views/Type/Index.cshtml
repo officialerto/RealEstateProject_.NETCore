@@ -1,0 +1,79 @@
+﻿@model List<EntityLayer.Entities.Type>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@if (Model.Count == 0)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="alert alert-success">Herhangi bir Tip yok.</div>
+            </div>
+        </div>
+    </div>
+}
+
+else
+{
+    <table class="table table-bordered table table-striped" id="table">
+        <tr>
+            <th>Ad</th>
+            <th>Durum</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.TypeName</td>
+                    <td>@item.Situation.SituationName</td>
+
+                    <td><a class="btn btn-danger" data-id="@item.TypeId" id="delete">Sil</a></td>
+                    <td><a class="btn btn-success" asp-action="Update" asp-route-id="@item.TypeId">Güncelle</a></td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+
+}
+<br>
+<a class="btn btn-primary" asp-action="Create">Ekle</a>
+
+
+<script type="text/javascript">
+        $("#table").on("click","#delete",function(){
+
+            var id=$(this).data("id");
+
+            swal({
+      title: "Silmek İstiyor musunuz?",
+      text: "Tip Silinecek gerçekten silmek istediğinize emin misiniz!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+         $.ajax({
+                    type:"GET",
+                    url:'/Admin/Type/Delete/'+id,
+
+                    success:function(){
+                        toastr.error("Tip Silme İşlemi başarıyla gerçekleşti")
+
+                    }
+                });
+
+                $(this).parent("td").parent("tr").remove();
+      }
+    });
+
+        });
+
+</script>
+

@@ -22,12 +22,17 @@ namespace BusinessLayer.Concrete
 
         public void Add(Situation p)
         {
+            p.Status = true;
+
             _status.Add(p);
         }
 
         public void Delete(Situation p)
         {
-            _status.Delete(p);
+            var status = _status.GetById(p.SituationId);
+            status.Status = false;
+
+            _status.Update(status);
         }
 
         public Situation GetById(int id)
@@ -47,7 +52,10 @@ namespace BusinessLayer.Concrete
 
         public void Update(Situation p)
         {
-            _status.Update(p);
+            var status = _status.GetById(p.SituationId);
+            status.SituationName = p.SituationName;
+
+            _status.Update(status);
         }
     }
 }

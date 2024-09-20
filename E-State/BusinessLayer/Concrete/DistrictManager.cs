@@ -24,12 +24,17 @@ namespace BusinessLayer.Concrete
 
         public void Add(District p)
         {
+            p.Status = true;
+
             _districtRepository.Add(p);
         }
 
         public void Delete(District p)
         {
-            _districtRepository.Delete(p);
+            var delete = _districtRepository.GetById(p.DistrictId);
+            delete.Status = false;
+
+            _districtRepository.Update(delete);
         }
 
         public District GetById(int id)
@@ -49,7 +54,13 @@ namespace BusinessLayer.Concrete
 
         public void Update(District p)
         {
-            _districtRepository.Update(p);
+            var district = _districtRepository.GetById(p.DistrictId);
+
+            district.DistrictName = p.DistrictName;
+            district.CityId = p.CityId;
+
+
+            _districtRepository.Update(district);
         }
     }
 }

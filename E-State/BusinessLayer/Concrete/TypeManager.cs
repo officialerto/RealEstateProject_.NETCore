@@ -23,12 +23,17 @@ namespace BusinessLayer.Concrete
 
         public void Add(EntityLayer.Entities.Type p)
         {
+            p.Status = true;
+
             _type.Add(p);
         }
 
         public void Delete(EntityLayer.Entities.Type p)
         {
-            _type.Delete(p);
+            var type = _type.GetById(p.TypeId);
+            type.Status = false;
+
+            _type.Update(type);
         }
 
         public EntityLayer.Entities.Type GetById(int id)
@@ -48,7 +53,11 @@ namespace BusinessLayer.Concrete
 
         public void Update(EntityLayer.Entities.Type p)
         {
-            _type.Update(p);
+            var type = _type.GetById(p.TypeId);
+            type.TypeName = p.TypeName;
+            type.SituationId = p.SituationId;
+
+            _type.Update(type);
         }
     }
 }

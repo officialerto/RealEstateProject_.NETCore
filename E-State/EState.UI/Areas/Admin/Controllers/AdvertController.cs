@@ -19,10 +19,11 @@ namespace EState.UI.Areas.Admin.Controllers
         NeighborhoodService neighborhoodService;
         SituationService situationService;
         TypeService typeService;
+        ImagesService imagesService;
 
         IWebHostEnvironment hostEnvironment;
 
-        public AdvertController(AdvertService advertService, CityService cityService, DistrictService districtService, NeighborhoodService neighborhoodService, SituationService situationService, TypeService typeService, IWebHostEnvironment hostEnvironment)
+        public AdvertController(AdvertService advertService, CityService cityService, DistrictService districtService, NeighborhoodService neighborhoodService, SituationService situationService, TypeService typeService, IWebHostEnvironment hostEnvironment, ImagesService imagesService)
         {
             this.advertService = advertService;
             this.cityService = cityService;
@@ -30,6 +31,7 @@ namespace EState.UI.Areas.Admin.Controllers
             this.neighborhoodService = neighborhoodService;
             this.situationService = situationService;
             this.typeService = typeService;
+            this.imagesService = imagesService;
 
             this.hostEnvironment = hostEnvironment;
         }
@@ -42,6 +44,109 @@ namespace EState.UI.Areas.Admin.Controllers
 
             return View(list);
         }
+
+        public IActionResult ImageList(int id)
+        {
+            var list = imagesService.List(x => x.Status == true && x.AdvertId == id);
+
+            return View(list);
+        }
+
+        public IActionResult ImageCreate(int id)
+        {
+            var advert = advertService.GetById(id);
+
+            return View(advert);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult ImageCreate(Advert data)
+        {
+            var advert = advertService.GetById(data.Id);
+
+            if (data.Image != null)
+            {
+                var dosyayolu = Path.Combine(hostEnvironment.WebRootPath, "img");
+
+                foreach (var item in data.Image)
+                {
+                    var tamDosyaAdi = Path.Combine(dosyayolu, item.FileName);
+
+                    using (var dosyaAkisi = new FileStream(tamDosyaAdi, FileMode.Create))
+                    {
+                        item.CopyTo(dosyaAkisi);
+                    }
+
+                    imagesService.Add(new Images
+                    {
+                        ImageName = item.FileName,
+                        Status = true,
+                        AdvertId = advert.Id
+                    });
+                }
+
+                TempData["Success"] = "İlan resim ekleme başarıyla gerçekleşti";
+                return RedirectToAction("Index");
+
+            }
+
+            return View(advert);
+        }
+
+        public IActionResult ImageDelete(int id)
+        {
+            var delete = imagesService.GetById(id);
+
+            imagesService.Delete(delete);
+
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult ImageUpdate(int id)
+        {
+            var image = imagesService.GetById(id);
+
+            return View(image);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult ImageUpdate(Images data)
+        {
+            ImagesValidation validationRules = new ImagesValidation();
+            ValidationResult result = validationRules.Validate(data);
+
+            if (result.IsValid)
+            {
+                if (data.Image != null)
+                {
+                    var dosyayolu = Path.Combine(hostEnvironment.WebRootPath, "img");
+
+                    var tamDosyaAdi = Path.Combine(dosyayolu, data.Image.FileName);
+
+                    using (var dosyaAkisi = new FileStream(tamDosyaAdi, FileMode.Create))
+                    {
+                        data.Image.CopyTo(dosyaAkisi);
+                    }
+
+                    imagesService.Update(data);
+                    return RedirectToAction("Index");
+                }
+            }
+
+            else
+            {
+                foreach (var item in result.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+
+            DropDown();
+            return View();
+        }
+
 
         public IActionResult DeleteList()
         {
@@ -150,6 +255,8 @@ namespace EState.UI.Areas.Admin.Controllers
             return View(advert);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Update(Advert data)
         {
             AdvertValidation validationRules = new AdvertValidation();
