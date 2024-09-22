@@ -34,4 +34,13 @@
     <Folder Include="Areas\User\Data\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\EState\.sass-cache\c271f55aaaf7c7f11c38a51797984cacc713c712\style.scssc" />
+    <None Include="wwwroot\EState\.sass-cache\c271f55aaaf7c7f11c38a51797984cacc713c712\_mixin.scssc" />
+    <None Include="wwwroot\EState\.sass-cache\c271f55aaaf7c7f11c38a51797984cacc713c712\_responsive.scssc" />
+    <None Include="wwwroot\EState\.sass-cache\c271f55aaaf7c7f11c38a51797984cacc713c712\_themecolor.scssc" />
+    <None Include="wwwroot\EState\.sass-cache\c271f55aaaf7c7f11c38a51797984cacc713c712\_theme_color.scssc" />
+    <None Include="wwwroot\EState\.sass-cache\c271f55aaaf7c7f11c38a51797984cacc713c712\_variables.scssc" />
+  </ItemGroup>
+
 </Project>

@@ -24,11 +24,10 @@
     <link href="~/Admin/css/sb-admin-2.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
     <script src="~/Admin/vendor/jquery/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-@*     <script src="sweetalert2.all.min.js"></script> *@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
 
 </head>
 
@@ -109,8 +108,8 @@
                      data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Active Components</a>
-                        <a class="collapse-item" href="utilities-border.html">Deleted Components</a>
+                        <a class="collapse-item" asp-area="Admin" asp-controller="Advert" asp-action="AdvertAll">Active Components</a>
+                        <a class="collapse-item" asp-area="Admin" asp-controller="Advert" asp-action="DeleteListAll">Deleted Components</a>
                     </div>
                 </div>
             </li>

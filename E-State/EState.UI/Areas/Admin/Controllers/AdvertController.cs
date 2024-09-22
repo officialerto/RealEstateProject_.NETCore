@@ -44,6 +44,13 @@ namespace EState.UI.Areas.Admin.Controllers
 
             return View(list);
         }
+        public IActionResult AdvertAll()
+        {
+            string id = HttpContext.Session.GetString("Id");
+
+            var list = advertService.List(x => x.Status == true && x.UserAdminId != id);
+            return View(list);
+        }
 
         public IActionResult ImageList(int id)
         {

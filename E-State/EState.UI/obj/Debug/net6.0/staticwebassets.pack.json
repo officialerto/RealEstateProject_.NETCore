@@ -7517,6 +7517,386 @@
       "PackagePath": "staticwebassets\\Admin\\vendor\\jquery\\jquery.slim.min.map"
     },
     {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\.gitattributes",
+      "PackagePath": "staticwebassets\\EState\\.gitattributes"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\about-us.html",
+      "PackagePath": "staticwebassets\\EState\\about-us.html"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\blog.html",
+      "PackagePath": "staticwebassets\\EState\\blog.html"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\contact.html",
+      "PackagePath": "staticwebassets\\EState\\contact.html"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\css\\animate.css",
+      "PackagePath": "staticwebassets\\EState\\css\\animate.css"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\EState\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\css\\classy-nav.min.css",
+      "PackagePath": "staticwebassets\\EState\\css\\classy-nav.min.css"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\EState\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\EState\\css\\jquery-ui.min.css"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\EState\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\EState\\css\\nice-select.css"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\css\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\EState\\css\\owl.carousel.css"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\css\\themify-icons.css",
+      "PackagePath": "staticwebassets\\EState\\css\\themify-icons.css"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\elements.html",
+      "PackagePath": "staticwebassets\\EState\\elements.html"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\EState\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\fonts\\classy.eot",
+      "PackagePath": "staticwebassets\\EState\\fonts\\classy.eot"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\fonts\\classy.svg",
+      "PackagePath": "staticwebassets\\EState\\fonts\\classy.svg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\fonts\\classy.ttf",
+      "PackagePath": "staticwebassets\\EState\\fonts\\classy.ttf"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\fonts\\classy.woff",
+      "PackagePath": "staticwebassets\\EState\\fonts\\classy.woff"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\EState\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\EState\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\EState\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\EState\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\EState\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\fonts\\themify.eot",
+      "PackagePath": "staticwebassets\\EState\\fonts\\themify.eot"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\fonts\\themify.svg",
+      "PackagePath": "staticwebassets\\EState\\fonts\\themify.svg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\fonts\\themify.ttf",
+      "PackagePath": "staticwebassets\\EState\\fonts\\themify.ttf"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\EState\\fonts\\themify.woff"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\about.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\about.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\cta.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\cta.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\editor.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\editor.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\fea-product.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\fea-product.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\feature1.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\feature1.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\feature2.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\feature2.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\feature3.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\feature3.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\feature4.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\feature4.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\feature5.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\feature5.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\feature6.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\feature6.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\feature7.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\feature7.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\feature8.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\feature8.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\feature9.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\feature9.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\footer.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\footer.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\hero1.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\hero1.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\hero2.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\hero2.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\hero3.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\hero3.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\hero4.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\hero4.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\hero5.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\hero5.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\listing.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\listing.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\team1.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\team1.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\team2.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\team2.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\bg-img\\team3.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\bg-img\\team3.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\blog-img\\blog1.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\blog-img\\blog1.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\blog-img\\blog2.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\blog-img\\blog2.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\blog-img\\blog3.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\blog-img\\blog3.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\blog-img\\c-1.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\blog-img\\c-1.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\blog-img\\c-2.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\blog-img\\c-2.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\blog-img\\c-3.jpg",
+      "PackagePath": "staticwebassets\\EState\\img\\blog-img\\c-3.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\core-img\\favicon.ico",
+      "PackagePath": "staticwebassets\\EState\\img\\core-img\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\core-img\\logo.png",
+      "PackagePath": "staticwebassets\\EState\\img\\core-img\\logo.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\core-img\\signature.png",
+      "PackagePath": "staticwebassets\\EState\\img\\core-img\\signature.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\icons\\bathtub.png",
+      "PackagePath": "staticwebassets\\EState\\img\\icons\\bathtub.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\icons\\envelope.png",
+      "PackagePath": "staticwebassets\\EState\\img\\icons\\envelope.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\icons\\flat.png",
+      "PackagePath": "staticwebassets\\EState\\img\\icons\\flat.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\icons\\garage.png",
+      "PackagePath": "staticwebassets\\EState\\img\\icons\\garage.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\icons\\home3.png",
+      "PackagePath": "staticwebassets\\EState\\img\\icons\\home3.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\icons\\house1.png",
+      "PackagePath": "staticwebassets\\EState\\img\\icons\\house1.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\icons\\house2.png",
+      "PackagePath": "staticwebassets\\EState\\img\\icons\\house2.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\icons\\location.png",
+      "PackagePath": "staticwebassets\\EState\\img\\icons\\location.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\icons\\new.png",
+      "PackagePath": "staticwebassets\\EState\\img\\icons\\new.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\icons\\new2.png",
+      "PackagePath": "staticwebassets\\EState\\img\\icons\\new2.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\icons\\phone-call.png",
+      "PackagePath": "staticwebassets\\EState\\img\\icons\\phone-call.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\icons\\prize.png",
+      "PackagePath": "staticwebassets\\EState\\img\\icons\\prize.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\icons\\prize2.png",
+      "PackagePath": "staticwebassets\\EState\\img\\icons\\prize2.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\icons\\rent.png",
+      "PackagePath": "staticwebassets\\EState\\img\\icons\\rent.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\icons\\signature.png",
+      "PackagePath": "staticwebassets\\EState\\img\\icons\\signature.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\img\\icons\\space.png",
+      "PackagePath": "staticwebassets\\EState\\img\\icons\\space.png"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\index.html",
+      "PackagePath": "staticwebassets\\EState\\index.html"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\js\\active.js",
+      "PackagePath": "staticwebassets\\EState\\js\\active.js"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\EState\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\js\\classy-nav.min.js",
+      "PackagePath": "staticwebassets\\EState\\js\\classy-nav.min.js"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\EState\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\js\\jquery\\jquery-2.2.4.min.js",
+      "PackagePath": "staticwebassets\\EState\\js\\jquery\\jquery-2.2.4.min.js"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\js\\map-active.js",
+      "PackagePath": "staticwebassets\\EState\\js\\map-active.js"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\EState\\js\\plugins.js"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\EState\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\listings.html",
+      "PackagePath": "staticwebassets\\EState\\listings.html"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\scss\\_mixin.scss",
+      "PackagePath": "staticwebassets\\EState\\scss\\_mixin.scss"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\scss\\_responsive.scss",
+      "PackagePath": "staticwebassets\\EState\\scss\\_responsive.scss"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\scss\\_theme_color.scss",
+      "PackagePath": "staticwebassets\\EState\\scss\\_theme_color.scss"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\EState\\scss\\_variables.scss"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\EState\\scss\\style.scss"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\single-blog.html",
+      "PackagePath": "staticwebassets\\EState\\single-blog.html"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\single-listings.html",
+      "PackagePath": "staticwebassets\\EState\\single-listings.html"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\style.css",
+      "PackagePath": "staticwebassets\\EState\\style.css"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\EState\\style.css.map",
+      "PackagePath": "staticwebassets\\EState\\style.css.map"
+    },
+    {
       "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -7537,8 +7917,16 @@
       "PackagePath": "staticwebassets\\img\\WeiLDIjr_400x400.jpg"
     },
     {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\img\\mustakil-ev-yapmak-icin-gerekli-izinler-neler-100-0.jpg",
+      "PackagePath": "staticwebassets\\img\\mustakil-ev-yapmak-icin-gerekli-izinler-neler-100-0.jpg"
+    },
+    {
       "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\img\\psd.jpg",
       "PackagePath": "staticwebassets\\img\\psd.jpg"
+    },
+    {
+      "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\img\\uuu.jpg",
+      "PackagePath": "staticwebassets\\img\\uuu.jpg"
     },
     {
       "Id": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\js\\site.js",

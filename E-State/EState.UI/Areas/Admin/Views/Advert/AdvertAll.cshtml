@@ -1,0 +1,155 @@
+﻿@model List<Advert>
+
+@{
+    ViewData["Title"] = "AdvertAll";
+}
+
+<table id="table" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Açıklama</th>
+            <th>Fiyat</th>
+            <th>Oda Sayısı</th>
+            <th>Banyo Sayısı</th>
+            <th>Alanı</th>
+            <th>Kat</th>
+            <th>Adres</th>
+            <th>İlan Resimleri</th>
+            <th>Resim Ekle</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Description</td>
+                <td>@item.Price</td>
+                <td>@item.NumberOfRooms</td>
+                <td>@item.BathroomNumbers</td>
+                <td>@item.Area</td>
+                <td>@item.Floor</td>
+                <td>@item.Address</td>
+                <td><a class="btn btn-success" asp-action="ImageList" asp-route-id="@item.Id">İlan Resimleri</a></td>
+                <td><a class="btn btn-info" asp-action="ImageCreate" asp-route-id="@item.Id">Resim Ekle</a></td>
+                <td><a class="btn btn-danger" data-id="@item.Id" id="delete">Sil</a></td>
+                <td><a class="btn btn-warning" asp-action="Update" asp-route-id="@item.Id">Güncelle</a></td>
+            </tr>
+
+        }
+    </tbody>
+    <tfoot>
+
+        <tr>
+            <th>Açıklama</th>
+            <th>Fiyat</th>
+            <th>Oda Sayısı</th>
+            <th>Banyo Sayısı</th>
+            <th>Alanı</th>
+            <th>Kat</th>
+            <th>Adres</th>
+            <th>İlan Resimleri</th>
+            <th>Resim Ekle</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+    </tfoot>
+</table>
+
+
+@*@if (Model.Count==0)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="alert alert-success">Herhangi bir ilan yok.</div>
+            </div>
+        </div>
+    </div>
+}
+
+else
+{
+    <table class="table table-bordered table table-striped" id="table">
+    <tr>
+        <th>Açıklama</th>
+        <th>Fiyat</th>
+        <th>Oda Sayısı</th>
+        <th>Banyo Sayısı</th>
+        <th>Alanı</th>
+        <th>Kat</th>
+        <th>Adres</th>
+        <th>İlan Resimleri</th>
+        <th>Resim Ekle</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+
+    <tbody>
+      @foreach (var item in Model)
+      {
+          <tr>
+              <td>@item.Description</td>
+              <td>@item.Price</td>
+              <td>@item.NumberOfooms</td>
+              <td>@item.BathroomNumbers</td>
+              <td>@item.Area</td>
+              <td>@item.Floor</td>
+              <td>@item.Address</td>
+              <td><a class="btn btn-success" asp-action="ImageList" asp-route-id="@item.AdvertId">İlan Resimleri</a></td>
+              <td><a class="btn btn-info" asp-action="ImageCreate" asp-route-id="@item.AdvertId">Resim Ekle</a></td>
+              <td><a class="btn btn-danger"  data-id="@item.AdvertId" id="delete">Sil</a></td>
+              <td><a class="btn btn-warning" asp-action="Update" asp-route-id="@item.AdvertId">Güncelle</a></td>
+          </tr>
+
+      }
+    </tbody>
+</table>
+
+}*@
+<br>
+<a class="btn btn-primary" asp-action="Create">Ekle</a>
+
+<script>
+    $(document).ready(function () {
+        $('table.display').DataTable({
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/2.1.7/sorting/turkish-string.js"
+            }
+
+        });
+
+    });
+</script>
+<script type="text/javascript">
+    $("#table").on("click", "#delete", function () {
+
+        var id = $(this).data("id");
+
+        swal({
+            title: "Silmek İstiyor musunuz?",
+            text: "İlan Silinecek gerçekten silmek istediğinize emin misiniz!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    $.ajax({
+                        type: "GET",
+                        url: '/Admin/Advert/DeleteListAll/' + id,
+
+                        success: function () {
+                            toastr.error("İlan Silme İşlmei başarıyla gerçekleşti")
+
+                        }
+                    });
+
+                    $(this).parent("td").parent("tr").remove();
+                }
+            });
+
+    });
+
+</script>

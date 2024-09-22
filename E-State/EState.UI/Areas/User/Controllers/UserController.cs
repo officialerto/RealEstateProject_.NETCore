@@ -126,5 +126,13 @@ namespace EState.UI.Areas.User.Controllers
                 return View(model);
             }
         }
+
+        public async Task<IActionResult> LogOut()
+        {
+            await _signInManager.SignOutAsync();
+            HttpContext.Session.Remove("FullName");
+
+            return RedirectToAction("Login");
+        }
     }
 }

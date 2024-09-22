@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "datatables.net-dt": "^2.1.7",
     "sweetalert2": "^11.14.0"
   }
 }
