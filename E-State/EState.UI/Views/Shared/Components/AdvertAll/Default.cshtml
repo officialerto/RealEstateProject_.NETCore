@@ -1,0 +1,77 @@
+﻿@model PagedList.IPagedList<Advert> 
+
+
+@* @using X.PagedList;
+@using X.PagedList.Web.Common;
+@using X.PagedList.Mvc.Core; *@
+
+
+<section class="featured-properties-area section-padding-100-50">
+    <div class="container">
+
+
+        <div class="row">
+
+            @foreach (var item in Model)
+            {
+
+                var c = 1;
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="single-featured-property mb-50 wow fadeInUp" data-wow-delay="100ms">
+
+
+                        <!-- Property Thumbnail -->
+                        <div class="property-thumb">
+
+                            @foreach (var rsm in ViewBag.imgs)
+                            {
+
+                                if (rsm.AdvertId == item.Id)
+                                {
+                                    if (@c == 1)
+                                    {
+
+
+
+                                        <img src="~/img/@rsm.ImageName" alt="">
+                                    }
+                                    c++;
+                                }
+                            }
+                            <div class="tag">
+                                <span>@item.Type.Situation.SituationName</span>
+                            </div>
+                            <div class="list-price">
+                                <p>@item.Price ₺</p>
+                            </div>
+                        </div>
+                        <!-- Property Content -->
+                        <div class="property-content">
+                            <h5></h5>
+                            <p class="location"><img src="~/EState/img/icons/location.png" alt="">@item.Neighborhood.District.City.CityName - @item.Neighborhood.District.DistrictName</p><a class="btn btn-warning" asp-action="Details" asp-controller="Advert" asp-route-id="@item.Id">Detaya Git</a>
+                            <p>@item.AdvertTitle</p>
+                            <div class="property-meta-data d-flex align-items-end justify-content-between">
+                                <div class="new-tag">
+                                    <img src="~/EState/img/icons/new.png" alt="">
+                                </div>
+                                <div class="bathroom">
+                                    <img src="~/EState/img/icons/bathtub.png" alt="">
+                                    <span>@item.BathroomNumbers</span>
+                                </div>
+                                <div class="garage">
+                                    <img src="~/EState/img/icons/garage.png" alt="">
+                                    <span>@item.Garage</span>
+                                </div>
+                                <div class="space">
+                                    <img src="~/EState/img/icons/space.png" alt="">
+                                    <span>@item.Area m <sub>2</sub> </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<br />

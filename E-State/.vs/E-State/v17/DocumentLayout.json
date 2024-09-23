@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|d:\\github\\realestateproject_.netcore\\e-state\\estate.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|solutionrelative:estate.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|d:\\github\\realestateproject_.netcore\\e-state\\estate.ui\\views\\advert\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|solutionrelative:estate.ui\\views\\advert\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|d:\\github\\realestateproject_.netcore\\e-state\\estate.ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|solutionrelative:estate.ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|d:\\github\\realestateproject_.netcore\\e-state\\estate.ui\\controllers\\advertcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|solutionrelative:estate.ui\\controllers\\advertcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "EState.UI\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "EState.UI\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADABAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Views\\Advert\\Details.cshtml",
+              "RelativeDocumentMoniker": "EState.UI\\Views\\Advert\\Details.cshtml",
+              "ToolTip": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Views\\Advert\\Details.cshtml",
+              "RelativeToolTip": "EState.UI\\Views\\Advert\\Details.cshtml",
+              "ViewState": "AQIAABsCAAAAAAAAAAAAABYAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T11:54:57.52Z",
+              "WhenOpened": "2024-09-23T20:07:24.99Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "EState.UI\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "EState.UI\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAswFIAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T11:51:29.98Z",
-              "EditorCaption": ""
+              "DocumentIndex": 1,
+              "Title": "AdvertController.cs",
+              "DocumentMoniker": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Controllers\\AdvertController.cs",
+              "RelativeDocumentMoniker": "EState.UI\\Controllers\\AdvertController.cs",
+              "ToolTip": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Controllers\\AdvertController.cs",
+              "RelativeToolTip": "EState.UI\\Controllers\\AdvertController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T19:51:59.917Z"
             }
           ]
         }
