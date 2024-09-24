@@ -71,9 +71,9 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="#">For Rent</a></li>
-                                <li><a href="#">For Sale</a></li>
+                                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li><a asp-controller="Advert" asp-action="AdvertRent">For Rent</a></li>
+                                <li><a asp-controller="Advert" asp-action="AdvertSale">For Sale</a></li>
 
                                 @if (User.Identity != null && User.Identity.IsAuthenticated)
                                 {

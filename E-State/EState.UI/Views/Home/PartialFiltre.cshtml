@@ -1,0 +1,163 @@
+﻿<div class="south-search-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="advanced-search-form">
+                    <!-- Search Title -->
+                    <div class="search-title">
+                        <p>Size Uygun İlanları Hızlıca Filtreleyebilirsiniz.</p>
+                    </div>
+                    <!-- Search Form -->
+                    <form asp-controller="Home" asp-action="Filter" method="get">
+                        <div class="row">
+
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="min" placeholder="En Az">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="max" placeholder="En Çok">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="form-group">
+                                    <select name="cityid" id="CityId" class="form-control">
+                                        <option value="0" selected>Şehir Seçiniz</option>
+
+                                        @foreach (var item in ViewBag.citylist)
+                                        {
+                                            <option value="@item.Value">@item.Text</option>
+                                        }
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="form-group">
+                                    <select id="DistrictId" name="districtid" class="form-control">
+                                        <option value="0" selected>Semt Seçiniz</option>
+
+                                        <option value="DistrictId"></option>
+
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="form-group">
+                                    <select id="NeighborhoodId" name="neighborhoodid" class="form-control">
+                                        <option value="0" selected>Mahalle Seçiniz</option>
+
+                                        <option value="NeighborhoodId"></option>
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4 col-xl-3">
+                                <div class="form-group">
+                                    <select id="SituationId" name="situtationid" class="form-control">
+                                        <option value="0" selected>Durum Seçiniz</option>
+                                        @foreach (var item in ViewBag.situations)
+                                        {
+                                            <option value="@item.Value">@item.Text</option>
+                                        }
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4 col-xl-2">
+                                <div class="form-group">
+                                    <select id="TypeId" name="typeid" class="form-control">
+                                        <option value="0" selected>Tip Seçiniz</option>
+
+                                        <option value="TypeId"></option>
+
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-between align-items-end">
+                                <div class="form-group mb-0">
+                                    <button type="submit" class="btn south-btn">Ara</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Admin/vendor/jquery/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+        $("#CityId").change(function () {
+
+            var cityId = $(this).val();
+            debugger
+            $.ajax({
+                type: "Post",
+                url: "/Home/DistrictGet?Cityid=" + cityId,
+                contentType: "html",
+                success: function (response) {
+                    debugger
+                    $("#DistrictId").empty();
+                    $("#DistrictId").append(response);
+                }
+            })
+        })
+    })
+</script>
+
+<script>
+    $(document).ready(function () {
+
+        $("#SituationId").change(function () {
+
+            var situationId = $(this).val();
+            debugger
+            $.ajax({
+                type: "Post",
+                url: "/Home/TypeGet?situationid=" + situationId,
+                contentType: "html",
+                success: function (response) {
+                    debugger
+                    $("#TypeId").empty();
+                    $("#TypeId").append(response);
+                }
+            })
+        })
+    })
+</script>
+
+<script>
+    $(document).ready(function () {
+
+        $("#DistrictId").change(function () {
+
+            var districtId = $(this).val();
+            debugger
+            $.ajax({
+                type: "Post",
+                url: "/Home/NeighborhoodGet?Districtid=" + districtId,
+                contentType: "html",
+                success: function (response) {
+                    debugger
+                    $("#NeighborhoodId").empty();
+                    $("#NeighborhoodId").append(response);
+                }
+            })
+        })
+    })
+</script>

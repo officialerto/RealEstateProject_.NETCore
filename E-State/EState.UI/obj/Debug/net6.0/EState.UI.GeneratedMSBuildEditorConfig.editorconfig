@@ -190,16 +190,40 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Views/Advert/AdvertRent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0XEFkdmVydFJlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Views/Advert/AdvertSale.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0XEFkdmVydFNhbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Views/Advert/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Views/Home/DistrictPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEaXN0cmljdFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Views/Home/NeighborhoodPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOZWlnaGJvcmhvb2RQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Views/Home/PartialFiltre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYXJ0aWFsRmlsdHJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Views/Home/TypePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUeXBlUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Views/Shared/Components/AdvertAll/Default.cshtml]
