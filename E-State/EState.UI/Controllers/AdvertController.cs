@@ -92,7 +92,7 @@ namespace EState.UI.Controllers
                                                Text = i.NeighborhoodName,
                                                Value = i.NeighborhoodId.ToString()
                                            }).ToList();
-            ViewBag.neighbourhood = value2;
+            ViewBag.neighborhood = value2;
             List<SelectListItem> value3 = (from i in typeService.List(x => x.Status == true)
                                            select new SelectListItem
                                            {
