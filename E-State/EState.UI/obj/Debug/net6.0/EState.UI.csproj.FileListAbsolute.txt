@@ -261,3 +261,5 @@ D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\runtimes
 D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\PagedList.dll
 D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\PagedList.Core.dll
 D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\PagedList.Mvc.dll
+D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\Mapster.dll
+D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\Mapster.Core.dll

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0YhNyg++5bKWxULe70fhzd/v9/zOdtIc/TNTPd60rgA=",
+  "Hash": "gKGkLY+jah3FoeUx0LPSsjMUBlcNNGllxd+LJ6Hx1Js=",
   "Source": "EState.UI",
   "BasePath": "_content/EState.UI",
   "Mode": "Default",
@@ -37597,6 +37597,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\20221023_175337.jpg"
+    },
+    {
+      "Identity": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\img\\GGnjkHIXMAArO-p.jpg",
+      "SourceId": "EState.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\",
+      "BasePath": "_content/EState.UI",
+      "RelativePath": "img/GGnjkHIXMAArO-p.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\GGnjkHIXMAArO-p.jpg"
     },
     {
       "Identity": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\wwwroot\\img\\Jpg.jpg",

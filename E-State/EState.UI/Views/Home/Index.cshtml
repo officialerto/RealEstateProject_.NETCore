@@ -1,16 +1,18 @@
-﻿@{
+﻿@* @model IPagedList<Advert> *@
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-@* @model IPagedList<Advert>
-@using X.PagedList;
+
+@* @using X.PagedList;
 @using X.PagedList.Web.Common;
 
 @using X.PagedList.Mvc.Core; *@
 @await Component.InvokeAsync("AdvertSlider")
 @await Html.PartialAsync("~/Views/Home/PartialFiltre.cshtml")
 
-<section class="hero-area">
+@* <section class="hero-area">
     <div class="hero-slides owl-carousel">
         <!-- Single Hero Slide -->
         <div class="single-hero-slide bg-img" style="background-image: url(~/Admin/img/bg-img/hero1.jpg);">
@@ -50,6 +52,6 @@
         </div>
     </div>
 </section>
-
+ *@
 @await Component.InvokeAsync("AdvertAll")
 

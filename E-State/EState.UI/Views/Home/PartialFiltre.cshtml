@@ -43,7 +43,6 @@
 
                                         <option value="DistrictId"></option>
 
-
                                     </select>
                                 </div>
                             </div>
@@ -61,7 +60,7 @@
 
                             <div class="col-12 col-md-4 col-xl-3">
                                 <div class="form-group">
-                                    <select id="SituationId" name="situtationid" class="form-control">
+                                    <select id="SituationId" name="situationid" class="form-control">
                                         <option value="0" selected>Durum Seçiniz</option>
                                         @foreach (var item in ViewBag.situations)
                                         {
@@ -84,6 +83,7 @@
                                 </div>
                             </div>
                             <div class="col-12 d-flex justify-content-between align-items-end">
+
                                 <div class="form-group mb-0">
                                     <button type="submit" class="btn south-btn">Ara</button>
                                 </div>
@@ -98,66 +98,77 @@
 </div>
 
 <script src="~/Admin/vendor/jquery/jquery.min.js"></script>
-
 <script>
     $(document).ready(function () {
 
         $("#CityId").change(function () {
-
             var cityId = $(this).val();
+
             debugger
+
             $.ajax({
                 type: "Post",
-                url: "/Home/DistrictGet?Cityid=" + cityId,
+                url: "/Home/DistrictGet?CityId=" + cityId,
                 contentType: "html",
+
                 success: function (response) {
-                    debugger
+
+
                     $("#DistrictId").empty();
                     $("#DistrictId").append(response);
                 }
-            })
-        })
-    })
+            });
+
+        });
+
+    });
 </script>
 
-<script>
+
+<script type="text/javascript">
     $(document).ready(function () {
 
         $("#SituationId").change(function () {
-
             var situationId = $(this).val();
-            debugger
+
             $.ajax({
                 type: "Post",
-                url: "/Home/TypeGet?situationid=" + situationId,
+                url: "/Home/TypeGet?SituationId=" + situationId,
                 contentType: "html",
+
                 success: function (response) {
-                    debugger
+
+
                     $("#TypeId").empty();
                     $("#TypeId").append(response);
                 }
-            })
-        })
-    })
+            });
+
+        });
+
+    });
 </script>
 
-<script>
+
+<script type="text/javascript">
     $(document).ready(function () {
 
         $("#DistrictId").change(function () {
-
             var districtId = $(this).val();
-            debugger
+
             $.ajax({
                 type: "Post",
-                url: "/Home/NeighborhoodGet?Districtid=" + districtId,
+                url: "/Home/NeighborhoodGet?DistrictId=" + districtId,
                 contentType: "html",
+
                 success: function (response) {
-                    debugger
+
                     $("#NeighborhoodId").empty();
                     $("#NeighborhoodId").append(response);
                 }
-            })
-        })
-    })
+            });
+
+        });
+
+    });
 </script>

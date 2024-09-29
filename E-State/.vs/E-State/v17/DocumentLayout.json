@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|d:\\github\\realestateproject_.netcore\\e-state\\estate.ui\\views\\home\\partialfiltre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|solutionrelative:estate.ui\\views\\home\\partialfiltre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|d:\\github\\realestateproject_.netcore\\e-state\\estate.ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|solutionrelative:estate.ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|d:\\github\\realestateproject_.netcore\\e-state\\estate.ui\\areas\\user\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07E6883-1080-4E66-8984-0AA7EFCDA5B9}|EState.UI\\EState.UI.csproj|solutionrelative:estate.ui\\areas\\user\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,39 +13,20 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 185,
+          "DockedWidth": 201,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PartialFiltre.cshtml",
-              "DocumentMoniker": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Views\\Home\\PartialFiltre.cshtml",
-              "RelativeDocumentMoniker": "EState.UI\\Views\\Home\\PartialFiltre.cshtml",
-              "ToolTip": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Views\\Home\\PartialFiltre.cshtml",
-              "RelativeToolTip": "EState.UI\\Views\\Home\\PartialFiltre.cshtml",
-              "ViewState": "AQIAAIMAAAAAAAAAAAApwJUAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-23T22:03:09.192Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 239,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "EState.UI\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "EState.UI\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAGwAAAAAAAAAAIAwwHgAAAANAAAA",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Areas\\User\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "EState.UI\\Areas\\User\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Github\\RealEstateProject_.NETCore\\E-State\\EState.UI\\Areas\\User\\Controllers\\UserController.cs",
+              "RelativeToolTip": "EState.UI\\Areas\\User\\Controllers\\UserController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBwAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T21:46:57.923Z",
+              "WhenOpened": "2024-09-29T19:46:44.215Z",
               "EditorCaption": ""
             }
           ]
