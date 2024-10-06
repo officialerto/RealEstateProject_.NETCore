@@ -74,6 +74,53 @@ namespace EState.UI.Areas.User.Controllers
             return View(model);
         }
 
+        public IActionResult ChangePassword()
+        {
+            return View(new ChangePasswordModel());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]  
+        public async Task<IActionResult> ChangePassword(ChangePasswordModel changePasswordModel)
+        {
+            if (ModelState.IsValid)
+            {
+                UserAdmin user = await _userManager.FindByNameAsync(User.Identity.Name);
+
+                bool exist = await _userManager.CheckPasswordAsync(user, changePasswordModel.OldPassword);
+
+                if (exist)
+                {
+                    IdentityResult result = await _userManager.ChangePasswordAsync(user, changePasswordModel.OldPassword, changePasswordModel.NewPassword);
+
+                    if (result.Succeeded)
+                    {
+                        await _userManager.UpdateSecurityStampAsync(user);
+                        await _signInManager.SignOutAsync();
+                        await _signInManager.PasswordSignInAsync(user, changePasswordModel.NewPassword, true, true);
+
+                        ViewBag.success = "Kullanıcı şifresi başarıyla güncellendi.";
+                    }
+
+                    else
+                    {
+                        foreach (var item in result.Errors)
+                        {
+                            ModelState.AddModelError("", item.Description);
+                        }
+                    }
+                }
+                else
+                {
+                    
+                        ModelState.AddModelError("", "Bir hata oluştu");
+                    
+                }
+            }
+
+            return View(new ChangePasswordModel());
+        }
+
         public IActionResult Login()
         {
             return View(new LoginModel());
