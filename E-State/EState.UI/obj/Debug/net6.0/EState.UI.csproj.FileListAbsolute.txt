@@ -263,3 +263,4 @@ D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\PagedLis
 D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\PagedList.Mvc.dll
 D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\Mapster.dll
 D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\Mapster.Core.dll
+D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\System.Formats.Asn1.dll

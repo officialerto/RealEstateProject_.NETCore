@@ -1,0 +1,62 @@
+﻿@model List<UserAdmin>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<table class="table table-bordered table table-striped" id="table">
+    <tr>
+        <th>Ad Soyadı</th>
+        <th>Kullanıcı Adı</th>
+        <th>Emaili</th>
+        <th>Rol Ata</th>
+        <th>Engelle</th>
+    </tr>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FullName</td>
+                <td>@item.UserName</td>
+                <td>@item.Email</td>
+                <td><a class="btn btn-primary" asp-action="RoleAssign" asp-route-id="@item.Id">Rol Ata</a></td>
+                <td><a class="btn btn-danger" data-id="@item.Id" id="delete">Engelle</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+<a class="btn btn-primary" asp-action="Create">Kullanıcı Ekle</a>
+
+<script type="text/javascript">
+    $("#table").on("click", "#delete", function () {
+        var id = $(this).data("id");
+
+        swal({
+            title: "Kullanıcı Silinecek!",
+            text: "Bu kullanıcı silinecek gerçekten silmek istediğinize emin misinz?",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+
+                    $.ajax({
+                        type: 'GET',
+                        url: '/Admin/UserManagement/UserDelete/' + id,
+                        success: function () {
+                            toastr.error("Kategori silme işlemi başarıyla gerçekleşti");
+                        }
+                    });
+
+                    $(this).parent("td").parent("tr").remove();
+
+                }
+            });
+
+
+    });
+</script>
+

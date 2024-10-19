@@ -204,15 +204,29 @@
                 </div>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#advert"
+                   aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>User Management</span>
+                </a>
+                <div id="advert" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
 
-            <li class="nav-item active">
+                        <a class="collapse-item" asp-area="Admin" asp-controller="AdminUserManagement" asp-action="Index">Active Users</a>
+                        <a class="collapse-item" asp-area="Admin" asp-controller="AdminUserManagement" asp-action="UserDeleteList">Deactive Users</a>
+                    </div>
+                </div>
+            </li>
+
+            @* <li class="nav-item active">
                 <a class="nav-link" asp-controller="AdminUserManagement" asp-action="Index">
-                    @*...*@
+                    @*...
                     <span>
                         User Management
                     </span>
                 </a>
-            </li>
+            </li> *@
 
             <li class="nav-item active">
                 <a class="nav-link" asp-controller="AdminUserManagement" asp-action="Index">

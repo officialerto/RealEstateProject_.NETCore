@@ -26,6 +26,70 @@ namespace EState.UI.Areas.User.Controllers
             return View();
         }
 
+        public IActionResult ResetPassword()
+        {
+            return View(new ResetPasswordModel());
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordModel model)
+        {
+            UserAdmin user = await _userManager.FindByEmailAsync(model.Email);
+
+            if (user != null)
+            {
+                string resettoken = await _userManager.GeneratePasswordResetTokenAsync(user);
+
+                string passwordresetlink = Url.Action("UpdatePassword", "User", new { userId = user.Id, token = resettoken }, HttpContext.Request.Scheme);
+                //_rabbitMQHelper.SendPasswordResetRequest(model.Email, passwordresetlink);
+
+                //_passwordResetRequestHandler.StartHandling();
+                MailHelper.ResetPassword.PasswordSendMail(passwordresetlink); //bu gönderme işlemi artık rabbitmqhelper ile yapılıyor
+
+                ViewBag.state = true;
+            }
+            else
+            {
+
+                ViewBag.state = false;
+            }
+            return View(model);
+        }
+
+        public IActionResult UpdatePassword(string userId, string token)
+        {
+            TempData["userId"] = userId;
+            TempData["token"] = token;
+            return View();
+        }
+        [HttpPost]
+
+        public async Task<IActionResult> UpdatePassword([Bind("NewPassword")] ResetPasswordModel model)
+        {
+            string token = TempData["token"].ToString();
+            string userId = TempData["userId"].ToString();
+
+            UserAdmin user = await _userManager.FindByIdAsync(userId);
+
+            if (user != null)
+            {
+                IdentityResult result = await _userManager.ResetPasswordAsync(user, token, model.NewPassword);
+
+                if (result.Succeeded)
+                {
+                    await _userManager.UpdateSecurityStampAsync(user);
+
+                    TempData["Success"] = "Başarıyla güncellenmiştir";
+
+                }
+            }
+            else
+            {
+                ModelState.AddModelError("", "Böyle bir kullanıcı bulunamadı");
+            }
+            return View();
+        }
+
         public IActionResult Profile()
         {
             var user = _userManager.FindByNameAsync(User.Identity.Name).Result;

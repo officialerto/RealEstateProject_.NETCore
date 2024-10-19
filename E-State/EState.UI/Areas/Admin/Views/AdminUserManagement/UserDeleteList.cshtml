@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "UserDeleteList";
+}
+
+﻿
+<table class="table table-bordered table table-striped">
+    <tr>
+        <th>Ad Soyadı</th>
+        <th>Kullanıcı Adı</th>
+        <th>Emaili</th>
+
+        <th>Aktif Et</th>
+    </tr>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FullName</td>
+                <td>@item.UserName</td>
+                <td>@item.Email</td>
+
+                <td><a class="btn btn-success" asp-route-id="@item.Id" asp-action="UsersActive">Aktif Et</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+

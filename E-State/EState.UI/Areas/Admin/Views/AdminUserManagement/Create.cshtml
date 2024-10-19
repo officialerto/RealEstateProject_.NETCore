@@ -1,0 +1,55 @@
+﻿@using EState.UI.Areas.User.Models
+@model RegisterModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <form method="post" asp-antiforgery="true">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <label>Ad Soyad</label>
+                        <input type="text" asp-for="FullName" class="form-control" />
+                        <br />
+                        <span asp-validation-for="FullName" class="text-danger"></span>
+                        <br />
+
+                        <label>Kullanıcı Adı</label>
+                        <input type="text" asp-for="UserName" class="form-control" />
+                        <br />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                        <br />
+
+                        <label>Email</label>
+                        <input type="email" asp-for="Email" class="form-control" />
+                        <br />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                        <br />
+
+
+
+                        <label>Şifre</label>
+                        <input type="password" asp-for="Password" class="form-control" />
+                        <br />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                        <br />
+
+                        <label>Şifre Tekrar</label>
+                        <input type="password" asp-for="RePassword" class="form-control" />
+                        <br />
+                        <span asp-validation-for="RePassword" class="text-danger"></span>
+                        <br />
+                        <button class="btn btn-primary" type="submit">Ekle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -18,6 +18,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Github\RealEstateProject_.NETCore\E-State\EState.UI
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Areas/Admin/Views/AdminUserManagement/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Vc2VyTWFuYWdlbWVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Areas/Admin/Views/AdminUserManagement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Vc2VyTWFuYWdlbWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Areas/Admin/Views/AdminUserManagement/RoleAssign.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Vc2VyTWFuYWdlbWVudFxSb2xlQXNzaWduLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Areas/Admin/Views/AdminUserManagement/UserDeleteList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Vc2VyTWFuYWdlbWVudFxVc2VyRGVsZXRlTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Areas/Admin/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -188,6 +204,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Areas/User/Views/User/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xVc2VyXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Areas/User/Views/User/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xVc2VyXFJlc2V0UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Areas/User/Views/User/UpdatePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xVc2VyXFVwZGF0ZVBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Github/RealEstateProject_.NETCore/E-State/EState.UI/Areas/User/_ViewImports.cshtml]

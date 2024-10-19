@@ -3,34 +3,13 @@ using EntityLayer.Entities;
 using EState.UI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using PagedList;
 using System.Diagnostics;
 
 namespace EState.UI.Controllers
 {
-    //private readonly ILogger<HomeController> _logger;
-
-    //public HomeController(ILogger<HomeController> logger)
-    //{
-    //    _logger = logger;
-    //}
-
-    //public IActionResult Index()
-    //{
-    //    return View();
-    //}
-
-    //public IActionResult Privacy()
-    //{
-    //    return View();
-    //}
-
-    //[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    //public IActionResult Error()
-    //{
-    //    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    //}
-
     public class HomeController : Controller
     {
 
@@ -62,6 +41,29 @@ namespace EState.UI.Controllers
             ViewBag.imgs = images;
             return View(list);
         }
+
+        // ------------------ GOOGLE RECAPTCHA ------------------
+
+        //public IActionResult Form()
+        //{
+        //    return View();
+        //}
+
+        //[HttpPost]
+        //public async Task<bool> CheckCaptcha()
+        //{
+        //    var postData = new List<KeyValuePair<string, string>>();
+        //    {
+        //        new KeyValuePair<string, string>("secret", "6LfnnFkqAAAAANdFWY44qOq4d6JT0ftwGlv527jj"),
+        //        new KeyValuePair<string, string>("response", HttpContext.Request.Form["google-recaptcha-response"])
+        //    };
+
+        //    var client = new HttpClient();
+
+        //    var response = await client.PostAsync("https://www.google.com/recaptcha/api/siteverify", new FormUrlEncodedContent(postData));
+
+        //    var object = (JObject)JsonConvert.DeserializeObject(await response.Content.ReadAsStringAsync());
+        //}
 
         public IActionResult Filter(int min, int max, int cityid, int typeid, int neighborhoodid, int districtid, int situtationid)
         {
