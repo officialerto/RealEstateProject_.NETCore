@@ -1,0 +1,30 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model List<IdentityRole>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<table class="table table-bordered table table-striped">
+    <tr>
+        <th>Rol Adı</th>
+        <th>Rol Sil</th>
+        <th>Rol Güncelle</th>
+    </tr>
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td><a class="btn btn-danger" asp-action="DeleteRole" asp-route-id="@item.Id">Sil</a></td>
+                <td><a class="btn btn-warning" asp-action="UpdateRole" asp-route-id="@item.Id">Güncelle</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br>
+<a class="btn btn-primary" asp-action="RoleCreate">Yeni Rol Ekle</a>
+
