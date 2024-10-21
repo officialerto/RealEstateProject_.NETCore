@@ -21,7 +21,11 @@
           "Microsoft.EntityFrameworkCore.Tools": "6.0.3",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.18",
           "PagedList.Core": "1.17.4",
-          "PagedList.Mvc": "4.5.0"
+          "PagedList.Mvc": "4.5.0",
+          "RabbitMQ.Client": "6.8.1",
+          "X.PagedList": "10.5.3",
+          "X.PagedList.EF": "7.9.0",
+          "X.PagedList.Mvc.Core": "10.5.3"
         },
         "runtime": {
           "EState.UI.dll": {}
@@ -44,6 +48,18 @@
           "lib/netstandard1.5/Castle.Core.dll": {
             "assemblyVersion": "4.0.0.0",
             "fileVersion": "4.4.1.0"
+          }
+        }
+      },
+      "EntityFramework/6.2.0": {
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.2.61023.0"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.2.61023.0"
           }
         }
       },
@@ -618,7 +634,7 @@
         "dependencies": {
           "MessagePack.Annotations": "2.1.152",
           "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
-          "System.Memory": "4.5.4",
+          "System.Memory": "4.5.5",
           "System.Reflection.Emit": "4.6.0",
           "System.Reflection.Emit.Lightweight": "4.6.0",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
@@ -800,7 +816,7 @@
         "dependencies": {
           "Microsoft.CodeAnalysis.Analyzers": "3.3.2",
           "System.Collections.Immutable": "6.0.0",
-          "System.Memory": "4.5.4",
+          "System.Memory": "4.5.5",
           "System.Reflection.Metadata": "5.0.0",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Text.Encoding.CodePages": "4.7.0",
@@ -1850,6 +1866,18 @@
           }
         }
       },
+      "RabbitMQ.Client/6.8.1": {
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Threading.Channels": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.8.1.0"
+          }
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -2328,7 +2356,7 @@
           "System.Threading": "4.3.0"
         }
       },
-      "System.Memory/4.5.4": {},
+      "System.Memory/4.5.5": {},
       "System.Net.Http/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -2705,6 +2733,14 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
+      "System.Threading.Channels/7.0.0": {
+        "runtime": {
+          "lib/net6.0/System.Threading.Channels.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        }
+      },
       "System.Threading.Tasks/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -2788,6 +2824,37 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "X.PagedList/10.5.3": {
+        "runtime": {
+          "lib/net6.0/X.PagedList.dll": {
+            "assemblyVersion": "10.5.3.0",
+            "fileVersion": "10.5.3.0"
+          }
+        }
+      },
+      "X.PagedList.EF/7.9.0": {
+        "dependencies": {
+          "EntityFramework": "6.2.0",
+          "X.PagedList": "10.5.3"
+        },
+        "runtime": {
+          "lib/net461/X.PagedList.EF.dll": {
+            "assemblyVersion": "7.9.0.0",
+            "fileVersion": "7.9.0.0"
+          }
+        }
+      },
+      "X.PagedList.Mvc.Core/10.5.3": {
+        "dependencies": {
+          "X.PagedList": "10.5.3"
+        },
+        "runtime": {
+          "lib/net6.0/X.PagedList.Mvc.Core.dll": {
+            "assemblyVersion": "10.5.3.0",
+            "fileVersion": "10.5.3.0"
+          }
+        }
+      },
       "BusinessLayer/1.0.0": {
         "dependencies": {
           "DataAccessLayer": "1.0.0",
@@ -2834,6 +2901,13 @@
       "sha512": "sha512-zanbjWC0Y05gbx4eGXkzVycOQqVOFVeCjVsDSyuao9P4mtN1w3WxxTo193NGC7j3o2u3AJRswaoC6hEbnGACnQ==",
       "path": "castle.core/4.4.1",
       "hashPath": "castle.core.4.4.1.nupkg.sha512"
+    },
+    "EntityFramework/6.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ptGyXOf26qLrtn+2doAmylIlCxOnBJANwlyyLrXDmqIk9O18IzLWHyxDwwAyhgXkxmbiaA0WNpRy67WRReInBw==",
+      "path": "entityframework/6.2.0",
+      "hashPath": "entityframework.6.2.0.nupkg.sha512"
     },
     "FluentValidation/10.4.0": {
       "type": "package",
@@ -3864,6 +3938,13 @@
       "path": "pagedlist.mvc/4.5.0",
       "hashPath": "pagedlist.mvc.4.5.0.nupkg.sha512"
     },
+    "RabbitMQ.Client/6.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jNsmGgmCNw2S/NzskeN2ijtGywtH4Sk/G6jWUTD5sY9SrC27Xz6BsLIiB8hdsfjeyWCa4j4GvCIGkpE8wrjU1Q==",
+      "path": "rabbitmq.client/6.8.1",
+      "hashPath": "rabbitmq.client.6.8.1.nupkg.sha512"
+    },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -4242,12 +4323,12 @@
       "path": "system.linq.expressions/4.3.0",
       "hashPath": "system.linq.expressions.4.3.0.nupkg.sha512"
     },
-    "System.Memory/4.5.4": {
+    "System.Memory/4.5.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
-      "path": "system.memory/4.5.4",
-      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+      "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "path": "system.memory/4.5.5",
+      "hashPath": "system.memory.4.5.5.nupkg.sha512"
     },
     "System.Net.Http/4.3.0": {
       "type": "package",
@@ -4529,6 +4610,13 @@
       "path": "system.threading/4.3.0",
       "hashPath": "system.threading.4.3.0.nupkg.sha512"
     },
+    "System.Threading.Channels/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qmeeYNROMsONF6ndEZcIQ+VxR4Q/TX/7uIVLJqtwIWL7dDWeh0l1UIqgo4wYyjG//5lUNhwkLDSFl+pAWO6oiA==",
+      "path": "system.threading.channels/7.0.0",
+      "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
+    },
     "System.Threading.Tasks/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -4577,6 +4665,27 @@
       "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "X.PagedList/10.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nE/KRWCHxT3giCmQY6y5i+2auc7eBDSmkT5VMnh5OOyzsp+OzcJOVjQAimKocqR2l+uBptsUyeBbQUPSDilqNQ==",
+      "path": "x.pagedlist/10.5.3",
+      "hashPath": "x.pagedlist.10.5.3.nupkg.sha512"
+    },
+    "X.PagedList.EF/7.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ig3JMyk/ojEzVXzbKXhitJxxHxTOyJ640iHRiX6OY754RYr71YqmYD1/PctYzqmEu/PlgTHwl4r91aNN02mRDA==",
+      "path": "x.pagedlist.ef/7.9.0",
+      "hashPath": "x.pagedlist.ef.7.9.0.nupkg.sha512"
+    },
+    "X.PagedList.Mvc.Core/10.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-k++KfbXi1cfBT+eoIc0bTvE653XUjguSAjklR/VJnsebk2ClP9IXfACZIVXnFIiu+C2wi7iMC2G3WOUNEZDCTw==",
+      "path": "x.pagedlist.mvc.core/10.5.3",
+      "hashPath": "x.pagedlist.mvc.core.10.5.3.nupkg.sha512"
     },
     "BusinessLayer/1.0.0": {
       "type": "project",

@@ -17,3 +17,15 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = D:\Github\RealEstateProject_.NETCore\E-State\Estate.WebAPI
 build_property._RazorSourceGeneratorDebug = 
+
+[D:/Github/RealEstateProject_.NETCore/E-State/Estate.WebAPI/Views/SituationApi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2l0dWF0aW9uQXBpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/RealEstateProject_.NETCore/E-State/Estate.WebAPI/Views/SituationApi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2l0dWF0aW9uQXBpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/RealEstateProject_.NETCore/E-State/Estate.WebAPI/Views/SituationApi/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2l0dWF0aW9uQXBpXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

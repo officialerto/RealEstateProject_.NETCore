@@ -264,3 +264,11 @@ D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\PagedLis
 D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\Mapster.dll
 D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\Mapster.Core.dll
 D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\System.Formats.Asn1.dll
+D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\EntityFramework.dll
+D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\X.PagedList.dll
+D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\X.PagedList.EF.dll
+D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll
+D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\obj\Debug\net6.0\EState.UI.MvcApplicationPartsAssemblyInfo.cs
+D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\RabbitMQ.Client.dll
+D:\Github\RealEstateProject_.NETCore\E-State\EState.UI\bin\Debug\net6.0\System.Threading.Channels.dll

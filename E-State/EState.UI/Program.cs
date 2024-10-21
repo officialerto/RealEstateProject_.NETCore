@@ -5,6 +5,7 @@ using DataAccessLayer.Concrete;
 using DataAccessLayer.Data;
 using EntityLayer.Entities;
 using EState.UI.Areas.Admin.Identity;
+using EState.UI.Areas.User.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -59,6 +60,10 @@ builder.Services.AddScoped<ISituationRepository, EfSituationRepository>();
 builder.Services.AddScoped<ITypeRepository, EfTypeRepository>();
 
 builder.Services.AddSession();
+
+builder.Services.AddScoped<RabbitMQHelper>();
+builder.Services.AddScoped<PasswordRequestResetHandler>();
+
 
 var app = builder.Build();
 

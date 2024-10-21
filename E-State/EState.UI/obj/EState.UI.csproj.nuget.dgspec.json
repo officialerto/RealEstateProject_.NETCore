@@ -359,6 +359,22 @@
             "PagedList.Mvc": {
               "target": "Package",
               "version": "[4.5.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[10.5.3, )"
+            },
+            "X.PagedList.EF": {
+              "target": "Package",
+              "version": "[7.9.0, )"
+            },
+            "X.PagedList.Mvc.Core": {
+              "target": "Package",
+              "version": "[10.5.3, )"
             }
           },
           "imports": [

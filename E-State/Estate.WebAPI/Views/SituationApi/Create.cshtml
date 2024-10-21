@@ -1,0 +1,27 @@
+﻿@using EntityLayer.Entities
+@model Situation
+@{
+    Layout = null;
+}
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <form method="post" asp-antiforgery="true">
+
+                        <label>Durum Adı</label>
+                        <input type="text" asp-for="SituationName" class="form-control" />
+                        <span asp-validation-for="SituationName" class="text-danger"></span>
+                        <br />
+                        <button type="submit" class="btn btn-primary">Ekle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
